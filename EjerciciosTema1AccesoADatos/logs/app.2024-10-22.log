@@ -1,0 +1,2 @@
+2024-10-22 19:26:34 WARN  [main] o.m.jdbc.message.server.ErrorPacket - Error: 1054-42S22: Unknown column 'last_login_date' in 'field list'
+2024-10-22 19:27:44 WARN  [main] o.m.jdbc.message.server.ErrorPacket - Error: 1054-42S22: Unknown column 'last_login_date' in 'field list'

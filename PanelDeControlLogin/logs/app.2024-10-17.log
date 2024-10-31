@@ -1,0 +1,27 @@
+2024-10-17 15:49:29 DEBUG [main] o.m.jdbc.message.server.OkPacket - System variable change:  autocommit = ON
+2024-10-17 15:49:29 DEBUG [main] o.m.jdbc.message.server.OkPacket - System variable change:  time_zone = SYSTEM
+2024-10-17 15:49:29 DEBUG [main] o.m.jdbc.message.server.OkPacket - System variable change:  character_set_client = latin1
+2024-10-17 15:49:29 DEBUG [main] o.m.jdbc.message.server.OkPacket - System variable change:  character_set_connection = latin1
+2024-10-17 15:49:29 DEBUG [main] o.m.jdbc.message.server.OkPacket - System variable change:  character_set_results = latin1
+2024-10-17 15:49:29 DEBUG [main] o.m.jdbc.message.server.OkPacket - System variable change:  redirect_url = 
+2024-10-17 15:49:29 DEBUG [main] o.m.jdbc.message.server.OkPacket - Database change: is 'pedidos'
+2024-10-17 15:49:29 DEBUG [main] o.m.jdbc.client.impl.StandardClient - execute query: set sql_mode=CONCAT(@@sql_mode,',STRICT_TRANS_TABLES'),session_track_system_variables = CONCAT(@@global.session_track_system_variables,',transaction_isolation'),NAMES utf8mb4
+2024-10-17 15:49:29 DEBUG [main] o.m.jdbc.message.server.OkPacket - System variable change:  character_set_client = utf8mb4
+2024-10-17 15:49:29 DEBUG [main] o.m.jdbc.message.server.OkPacket - System variable change:  character_set_connection = utf8mb4
+2024-10-17 15:49:29 DEBUG [main] o.m.jdbc.message.server.OkPacket - System variable change:  character_set_results = utf8mb4
+2024-10-17 15:49:29 DEBUG [main] o.m.jdbc.client.impl.StandardClient - execute query: Select * from pedidos where id_pedido = 12
+2024-10-17 15:49:29 DEBUG [main] o.m.jdbc.client.impl.StandardClient - execute query: Select * from pedidos_lineas where id_pedido = 12
+2024-10-17 15:55:52 DEBUG [main] o.m.jdbc.message.server.OkPacket - System variable change:  autocommit = ON
+2024-10-17 15:55:52 DEBUG [main] o.m.jdbc.message.server.OkPacket - System variable change:  time_zone = SYSTEM
+2024-10-17 15:55:52 DEBUG [main] o.m.jdbc.message.server.OkPacket - System variable change:  character_set_client = latin1
+2024-10-17 15:55:52 DEBUG [main] o.m.jdbc.message.server.OkPacket - System variable change:  character_set_connection = latin1
+2024-10-17 15:55:52 DEBUG [main] o.m.jdbc.message.server.OkPacket - System variable change:  character_set_results = latin1
+2024-10-17 15:55:52 DEBUG [main] o.m.jdbc.message.server.OkPacket - System variable change:  redirect_url = 
+2024-10-17 15:55:52 DEBUG [main] o.m.jdbc.message.server.OkPacket - Database change: is 'pedidos'
+2024-10-17 15:55:52 DEBUG [main] o.m.jdbc.client.impl.StandardClient - execute query: set sql_mode=CONCAT(@@sql_mode,',STRICT_TRANS_TABLES'),session_track_system_variables = CONCAT(@@global.session_track_system_variables,',transaction_isolation'),NAMES utf8mb4
+2024-10-17 15:55:52 DEBUG [main] o.m.jdbc.message.server.OkPacket - System variable change:  character_set_client = utf8mb4
+2024-10-17 15:55:52 DEBUG [main] o.m.jdbc.message.server.OkPacket - System variable change:  character_set_connection = utf8mb4
+2024-10-17 15:55:52 DEBUG [main] o.m.jdbc.message.server.OkPacket - System variable change:  character_set_results = utf8mb4
+2024-10-17 15:55:52 DEBUG [main] E.Service.PedidoService - Consultadndo pedido con id 12
+2024-10-17 15:55:52 DEBUG [main] o.m.jdbc.client.impl.StandardClient - execute query: Select * from pedidos where id_pedido = 12
+2024-10-17 15:55:52 DEBUG [main] o.m.jdbc.client.impl.StandardClient - execute query: Select * from pedidos_lineas where id_pedido = 12
