@@ -90,7 +90,7 @@ public class ChangePasswordView extends View {
 		        if (e.getKeyCode() == KeyEvent.VK_ENTER) {
 		        	String oldPass = new String(pfOldPass.getPassword());
 					String newPass = new String(pfNewPass.getPassword());
-					controller.changePassword(id, oldPass, newPass);
+					controller.changePassword(oldPass, newPass);
 		        }
 		    }
 		});
@@ -100,7 +100,7 @@ public class ChangePasswordView extends View {
 			public void actionPerformed(ActionEvent e) {
 				String oldPass = new String(pfOldPass.getPassword());
 				String newPass = new String(pfNewPass.getPassword());
-				controller.changePassword(id, oldPass, newPass);
+				controller.changePassword(oldPass, newPass);
 			}
 		});
 		GridBagConstraints gbc_btnConfirm = new GridBagConstraints();

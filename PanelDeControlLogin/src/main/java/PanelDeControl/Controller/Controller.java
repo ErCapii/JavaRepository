@@ -128,7 +128,7 @@ public class Controller {
 		}
 	}
 
-	public void changePassword(Long id, String oldPass, String newPass) {
+	public void changePassword(String oldPass, String newPass) {
 		try {
 			log.debug("Cambiando password");
 
@@ -136,7 +136,7 @@ public class Controller {
 				log.warn("Campo vacio");
 				throw new NoValidDataException("El campo no puede estar vacio");
 			}
-			sr.changePassword(id, oldPass, newPass);
+			sr.changePassword(user.getId(), oldPass, newPass);
 			lanzarProfile();
 		} catch (NoValidDataException | UserNotFoundException | UserUnauthorizedException | UserException e) {
 			JOptionPane.showMessageDialog(null, "Error: " + e.getMessage(), "error", JOptionPane.ERROR_MESSAGE);
