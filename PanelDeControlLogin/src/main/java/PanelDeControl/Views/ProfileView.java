@@ -10,6 +10,7 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
 import javax.swing.JButton;
+import javax.swing.JFileChooser;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
@@ -112,6 +113,18 @@ public class ProfileView extends View {
 				controller.lanzarLogin();
 			}
 		});
+		
+		JButton btnImportUser = new JButton("Importar Usuario");
+		btnImportUser.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				controller.importUser();
+			}
+		});
+		GridBagConstraints gbc_btnImportUser = new GridBagConstraints();
+		gbc_btnImportUser.insets = new Insets(0, 0, 0, 5);
+		gbc_btnImportUser.gridx = 1;
+		gbc_btnImportUser.gridy = 9;
+		add(btnImportUser, gbc_btnImportUser);
 		GridBagConstraints gbc_btnBack = new GridBagConstraints();
 		gbc_btnBack.gridx = 2;
 		gbc_btnBack.gridy = 9;

@@ -11,17 +11,16 @@ import java.awt.event.KeyEvent;
 
 import javax.swing.JButton;
 import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.JPasswordField;
-import javax.swing.JTextField;
 
+import PanelDeControl.Component.JMyPasswordField;
+import PanelDeControl.Component.JMyTextField;
 import PanelDeControl.Controller.Controller;
 
 public class LoginView extends View {
 
 	private static final long serialVersionUID = 1L;
-	private JTextField tfName;
-	private JPasswordField tfPassword;
+	private JMyTextField tfName;
+	private JMyPasswordField tfPassword;
 	private Controller controller;
 
 	/**
@@ -66,7 +65,8 @@ public class LoginView extends View {
 		gbc_lblName.gridy = 2;
 		add(lblName, gbc_lblName);
 
-		tfName = new JTextField();
+		tfName = new JMyTextField();
+		tfName.setLimit(50);
 		GridBagConstraints gbc_tfName = new GridBagConstraints();
 		gbc_tfName.insets = new Insets(0, 0, 5, 5);
 		gbc_tfName.fill = GridBagConstraints.HORIZONTAL;
@@ -92,7 +92,7 @@ public class LoginView extends View {
 		gbc_lblPassword.gridy = 4;
 		add(lblPassword, gbc_lblPassword);
 
-		tfPassword = new JPasswordField();
+		tfPassword = new JMyPasswordField();
 		GridBagConstraints gbc_pfPassword = new GridBagConstraints();
 		gbc_pfPassword.insets = new Insets(0, 0, 5, 5);
 		gbc_pfPassword.fill = GridBagConstraints.HORIZONTAL;

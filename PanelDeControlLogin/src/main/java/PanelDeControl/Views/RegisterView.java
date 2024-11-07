@@ -14,6 +14,8 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
+import PanelDeControl.Component.JMyPasswordField;
+import PanelDeControl.Component.JMyTextField;
 import PanelDeControl.Controller.Controller;
 import ejercicios.ejercicio05.service.DuplicateUserException;
 import ejercicios.ejercicio05.service.UserException;
@@ -22,31 +24,27 @@ import javax.swing.JPasswordField;
 public class RegisterView extends View {
 
 	private static final long serialVersionUID = 1L;
-	private JTextField tfName;
-	private JTextField tfEmail;
+	private JMyTextField tfName;
+	private JMyTextField tfEmail;
 	private Controller controller;
-	private JPasswordField pfPassword;
+	private JMyPasswordField pfPassword;
 
-	public void setTfName(JTextField tfName) {
+	public void setTfName(JMyTextField tfName) {
 		this.tfName = tfName;
 	}
 
-	public void setTfEmail(JTextField tfEmail) {
+	public void setTfEmail(JMyTextField tfEmail) {
 		this.tfEmail = tfEmail;
 	}
 
-	public void setPfPassword(JPasswordField pfPassword) {
+	public void setPfPassword(JMyPasswordField pfPassword) {
 		this.pfPassword = pfPassword;
 	}
 
-	/**
-	 * Create the panel.
-	 * 
-	 * @throws UserException
-	 * @throws DuplicateUserException
-	 */
+
 	public RegisterView(Controller controller) {
 		this.controller = controller;
+		
 		GridBagLayout gridBagLayout = new GridBagLayout();
 		gridBagLayout.columnWidths = new int[] { 0, 93, 251, 110, 0 };
 		gridBagLayout.rowHeights = new int[] { 0, 0, 0, 0, 0, 0, 0, 0 };
@@ -70,7 +68,8 @@ public class RegisterView extends View {
 		gbcLblName.gridy = 2;
 		add(lblName, gbcLblName);
 
-		tfName = new JTextField();
+		tfName = new JMyTextField();
+		tfName.setLimit(50);
 		GridBagConstraints gbcTfName = new GridBagConstraints();
 		gbcTfName.fill = GridBagConstraints.HORIZONTAL;
 		gbcTfName.insets = new Insets(0, 0, 5, 5);
@@ -95,7 +94,8 @@ public class RegisterView extends View {
 		gbcLblEmail.gridy = 3;
 		add(lblEmail, gbcLblEmail);
 
-		tfEmail = new JTextField();
+		tfEmail = new JMyTextField();
+		tfEmail.setLimit(50);
 		GridBagConstraints gbcTfEmail = new GridBagConstraints();
 		gbcTfEmail.insets = new Insets(0, 0, 5, 5);
 		gbcTfEmail.fill = GridBagConstraints.HORIZONTAL;
@@ -138,7 +138,7 @@ public class RegisterView extends View {
 		    }
 		});
 
-		pfPassword = new JPasswordField();
+		pfPassword = new JMyPasswordField();
 		GridBagConstraints gbc_pfPassword = new GridBagConstraints();
 		gbc_pfPassword.insets = new Insets(0, 0, 5, 5);
 		gbc_pfPassword.fill = GridBagConstraints.HORIZONTAL;

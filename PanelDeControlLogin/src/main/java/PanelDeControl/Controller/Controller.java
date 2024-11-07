@@ -1,9 +1,13 @@
 package PanelDeControl.Controller;
 
 import java.awt.EventQueue;
+import java.io.File;
 
+import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
+import javax.swing.filechooser.FileNameExtensionFilter;
+import javax.swing.plaf.FileChooserUI;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,6 +16,8 @@ import PanelDeControl.Views.ChangePasswordView;
 import PanelDeControl.Views.LoginView;
 import PanelDeControl.Views.ProfileView;
 import PanelDeControl.Views.RegisterView;
+import ceu.dam.ad.ejerciciosTema3.csv.ejercicio02.Ejercicio02ServiceImp;
+import ceu.dam.ad.ejerciciosTema3.csv.exceptions.CsvException;
 import ejercicios.ejercicio05.model.User;
 import ejercicios.ejercicio05.service.DuplicateUserException;
 import ejercicios.ejercicio05.service.NoValidDataException;
@@ -98,6 +104,7 @@ public class Controller {
 	}
 
 	public void register(String name, String email, String password) {
+			
 		try {
 			log.debug("Creando usuario");
 			if (name.isEmpty() || email.isEmpty() || password.isEmpty()) {
@@ -113,6 +120,7 @@ public class Controller {
 	}
 
 	public void login(String username, String password) {
+		
 		try {
 			log.debug("Iniciando sesion");
 
@@ -153,6 +161,30 @@ public class Controller {
 		}
 		return null;
 
+	}
+	
+	public void importUser() {
+		try {
+		JFileChooser chooser = new JFileChooser();
+		chooser.setDialogTitle("Selecciona un archivo");
+		Integer seleccion = chooser.showOpenDialog(frame);
+		
+		FileNameExtensionFilter filter = new FileNameExtensionFilter("Fichero XML", "xml", "csv");
+		chooser.setFileFilter(filter);
+		File fichero =null;
+		if (seleccion == JFileChooser.APPROVE_OPTION) {
+			fichero = chooser.getSelectedFile();
+			System.out.println(fichero.getAbsolutePath());
+		}else {
+			System.out.println("no va");	
+			throw new CsvException("No se a encontrado el fichero");
+		}
+		Ejercicio02ServiceImp service = new Ejercicio02ServiceImp();
+			service.importarUsuarioCSV(fichero.getAbsolutePath());
+		} catch (CsvException e) {
+			e.printStackTrace();
+		}
+		
 	}
 
 }

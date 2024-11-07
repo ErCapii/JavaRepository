@@ -1,0 +1,14 @@
+<croquetas>
+    <croqueta id= "1">
+        <nombre>abuela</nombre>
+        <tamaño>grande</tamaño>
+        <textura>crunchy</textura>
+        <ingrediente>carne</ingrediente>
+    </croqueta>
+    <croqueta id= "2">
+        <nombre>madre</nombre>
+        <tamaño>mediano</tamaño>
+        <textura>suave</textura>
+        <ingrediente>pollo</ingrediente>
+    </croqueta>
+</croquetas>

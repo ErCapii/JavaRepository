@@ -10,6 +10,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JPasswordField;
 
+import PanelDeControl.Component.JMyPasswordField;
 import PanelDeControl.Controller.Controller;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
@@ -20,7 +21,7 @@ public class ChangePasswordView extends View {
 
 	private static final long serialVersionUID = 1L;
 	private Controller controller;
-	private JPasswordField pfOldPass;
+	private JMyPasswordField pfOldPass;
 	private Long id;
 	private JPasswordField pfNewPass;
 
@@ -53,7 +54,7 @@ public class ChangePasswordView extends View {
 		gbc_lblOldPass.gridy = 2;
 		add(lblOldPass, gbc_lblOldPass);
 
-		pfOldPass = new JPasswordField();
+		pfOldPass = new JMyPasswordField();
 		GridBagConstraints gbc_pfOldPass = new GridBagConstraints();
 		gbc_pfOldPass.insets = new Insets(0, 0, 5, 5);
 		gbc_pfOldPass.fill = GridBagConstraints.HORIZONTAL;
@@ -77,7 +78,7 @@ public class ChangePasswordView extends View {
 		gbc_lblNewPass.gridy = 3;
 		add(lblNewPass, gbc_lblNewPass);
 
-		pfNewPass = new JPasswordField();
+		pfNewPass = new JMyPasswordField();
 		GridBagConstraints gbc_pfNewPass = new GridBagConstraints();
 		gbc_pfNewPass.insets = new Insets(0, 0, 5, 5);
 		gbc_pfNewPass.fill = GridBagConstraints.HORIZONTAL;
