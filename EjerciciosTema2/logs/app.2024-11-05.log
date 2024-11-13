@@ -1,0 +1,39 @@
+2024-11-05 20:40:34 DEBUG [main] c.d.a.e.x.e.E.Ejercicio4Service - Exportando lista de libros a XML en c:/temporal/libros.xml
+2024-11-05 20:40:34 DEBUG [main] c.d.a.e.x.e.E.Ejercicio4Service - Creando tag libros
+2024-11-05 20:40:34 DEBUG [main] c.d.a.e.x.e.E.Ejercicio4Service - Creando tag autores
+2024-11-05 20:40:34 DEBUG [main] c.d.a.e.x.e.E.Ejercicio4Service - Creando tag ediciones
+2024-11-05 20:40:34 DEBUG [main] c.d.a.e.x.e.E.Ejercicio4Service - Creando tag autores
+2024-11-05 20:40:34 DEBUG [main] c.d.a.e.x.e.E.Ejercicio4Service - Creando tag ediciones
+2024-11-05 20:40:34 DEBUG [main] c.d.a.e.x.e.E.Ejercicio4Service - Creando tag autores
+2024-11-05 20:40:34 DEBUG [main] c.d.a.e.x.e.E.Ejercicio4Service - Creando tag ediciones
+2024-11-05 20:40:34 DEBUG [main] c.d.a.e.x.e.E.Ejercicio4Service - Creando tag autores
+2024-11-05 20:40:34 DEBUG [main] c.d.a.e.x.e.E.Ejercicio4Service - Creando tag ediciones
+2024-11-05 20:40:34 DEBUG [main] c.d.a.e.x.e.E.Ejercicio4Service - Creando tag autores
+2024-11-05 20:40:34 DEBUG [main] c.d.a.e.x.e.E.Ejercicio4Service - Creando tag ediciones
+2024-11-05 20:40:34 DEBUG [main] c.d.a.e.x.e.E.Ejercicio4Service - Creando tag autores
+2024-11-05 20:40:34 DEBUG [main] c.d.a.e.x.e.E.Ejercicio4Service - Creando tag ediciones
+2024-11-05 20:40:34 DEBUG [main] c.d.a.e.x.e.E.Ejercicio4Service - Creando tag autores
+2024-11-05 20:40:34 DEBUG [main] c.d.a.e.x.e.E.Ejercicio4Service - Creando tag ediciones
+2024-11-05 20:40:34 DEBUG [main] c.d.a.e.x.e.E.Ejercicio4Service - Creando tag autores
+2024-11-05 20:40:34 DEBUG [main] c.d.a.e.x.e.E.Ejercicio4Service - Creando tag ediciones
+2024-11-05 20:40:34 DEBUG [main] c.d.a.e.x.e.E.Ejercicio4Service - Creando tag autores
+2024-11-05 20:40:34 DEBUG [main] c.d.a.e.x.e.E.Ejercicio4Service - Creando tag ediciones
+2024-11-05 20:40:34 DEBUG [main] c.d.a.e.x.e.E.Ejercicio4Service - Creando tag autores
+2024-11-05 20:40:34 DEBUG [main] c.d.a.e.x.e.E.Ejercicio4Service - Creando tag ediciones
+2024-11-05 20:40:34 DEBUG [main] c.d.a.e.x.e.E.Ejercicio4Service - Creando fichero XML en c:/temporal/libros.xml
+2024-11-05 20:41:23 DEBUG [main] c.d.a.e.x.e.E.Ejercicio4Service - Exportando lista de libros a XML en c:/temporal/libros.xml
+2024-11-05 20:41:23 DEBUG [main] c.d.a.e.x.e.E.Ejercicio4Service - Creando tag libros
+2024-11-05 20:41:23 DEBUG [main] c.d.a.e.x.e.E.Ejercicio4Service - Creando fichero XML en c:/temporal/libros.xml
+2024-11-05 20:43:58 INFO  [main] c.d.a.e.x.e.E.Ejercicio4Service - Exportando lista de libros a XML en c:/temporal/libros.xml
+2024-11-05 20:43:58 DEBUG [main] c.d.a.e.x.e.E.Ejercicio4Service - Creando libros
+2024-11-05 20:43:58 DEBUG [main] c.d.a.e.x.e.E.Ejercicio4Service - Creando tag libro: Libro [isbn=500792519, titulo=spzrdt calsyft, autores=[oqsrfbl ryswwycwo, ttijtkikv riaqo], ediciones=[Edicion [año=1951, editorial=icvwuaqyte pph gqvx], Edicion [año=1952, editorial=xyvrcr yezivhzzjw ztnrq]]]
+2024-11-05 20:43:58 DEBUG [main] c.d.a.e.x.e.E.Ejercicio4Service - Creando tag libro: Libro [isbn=523722970, titulo=mfmual shalazunef, autores=[khacsmtm yrrecoikq, jvwedpfm mwzzwym], ediciones=[Edicion [año=1972, editorial=imb axiaezp], Edicion [año=1996, editorial=ysezcor vggbq]]]
+2024-11-05 20:43:58 DEBUG [main] c.d.a.e.x.e.E.Ejercicio4Service - Creando tag libro: Libro [isbn=200321645, titulo=busr mdb jqmsrdl, autores=[fowvfvh nwqeie, iyd oanrcxvpmj], ediciones=[Edicion [año=1977, editorial=yycymmog knedl mioaqpesh], Edicion [año=1956, editorial=obdmgbmhc bvj]]]
+2024-11-05 20:43:58 DEBUG [main] c.d.a.e.x.e.E.Ejercicio4Service - Creando tag libro: Libro [isbn=317025745, titulo=semmhtnize jgnvslxwg amhgfphig, autores=[syhdxzp kfai], ediciones=[Edicion [año=1955, editorial=kedqnx oyxcdztabf]]]
+2024-11-05 20:43:58 DEBUG [main] c.d.a.e.x.e.E.Ejercicio4Service - Creando tag libro: Libro [isbn=507598117, titulo=bwjf gijjxhrv, autores=[pmfx spijbmkzk, tacfw ypqfptycnl], ediciones=[Edicion [año=1993, editorial=yawuobzws lfniq hqbg]]]
+2024-11-05 20:43:58 DEBUG [main] c.d.a.e.x.e.E.Ejercicio4Service - Creando tag libro: Libro [isbn=621251667, titulo=xawpypm yoc, autores=[doutttjhr edb, kfatow omw], ediciones=[Edicion [año=1959, editorial=snxtikj qrvjfzjc], Edicion [año=1993, editorial=zur zlypge dzpjrdfeld]]]
+2024-11-05 20:43:58 DEBUG [main] c.d.a.e.x.e.E.Ejercicio4Service - Creando tag libro: Libro [isbn=489815238, titulo=iqucnvcto kongagxhi, autores=[skdiothu iagnk], ediciones=[Edicion [año=1966, editorial=zyehj krjx]]]
+2024-11-05 20:43:58 DEBUG [main] c.d.a.e.x.e.E.Ejercicio4Service - Creando tag libro: Libro [isbn=636836079, titulo=aobu vxpy aiywofxs, autores=[epdndoj vym], ediciones=[Edicion [año=1963, editorial=fiuuthhsi chtsn], Edicion [año=1983, editorial=bew ytl]]]
+2024-11-05 20:43:58 DEBUG [main] c.d.a.e.x.e.E.Ejercicio4Service - Creando tag libro: Libro [isbn=885649812, titulo=mkxftxip nlixdnr, autores=[szbtvayou biocpkscy, vnshoumm kwplopzo], ediciones=[Edicion [año=1977, editorial=mxteqbzau inno jrrlpjsoqs], Edicion [año=2008, editorial=lhfaaqhe dsoendtfc]]]
+2024-11-05 20:43:58 DEBUG [main] c.d.a.e.x.e.E.Ejercicio4Service - Creando tag libro: Libro [isbn=334871446, titulo=wet luyxogvi, autores=[oik btun, amromeon jpqaukxpp], ediciones=[Edicion [año=1996, editorial=vqffwmzge neuvc]]]
+2024-11-05 20:43:58 DEBUG [main] c.d.a.e.x.e.E.Ejercicio4Service - Creando fichero XML en c:/temporal/libros.xml

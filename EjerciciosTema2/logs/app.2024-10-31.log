@@ -1,0 +1,941 @@
+2024-10-31 15:17:18 INFO  [AWT-EventQueue-0] P.Controller.Controller - Creando usuario
+2024-10-31 15:17:18 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Creando nuevo usuario: User(id=null, username=, email=, password=, createdDate=null, lastLoginDate=null)
+2024-10-31 15:17:19 WARN  [AWT-EventQueue-0] o.m.jdbc.message.server.ErrorPacket - Error: 1146-42S02: Table 'pedidos.usuarios' doesn't exist
+2024-10-31 15:17:19 ERROR [AWT-EventQueue-0] e.e.service.UserServiceImpl - Error creando usuario 
+java.sql.SQLSyntaxErrorException: (conn=583) Table 'pedidos.usuarios' doesn't exist
+	at org.mariadb.jdbc.export.ExceptionFactory.createException(ExceptionFactory.java:289)
+	at org.mariadb.jdbc.export.ExceptionFactory.create(ExceptionFactory.java:378)
+	at org.mariadb.jdbc.message.ClientMessage.readPacket(ClientMessage.java:189)
+	at org.mariadb.jdbc.client.impl.StandardClient.readPacket(StandardClient.java:1235)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResults(StandardClient.java:1174)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResponse(StandardClient.java:1093)
+	at org.mariadb.jdbc.client.impl.StandardClient.execute(StandardClient.java:1017)
+	at org.mariadb.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:101)
+	at org.mariadb.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:257)
+	at ejercicios.ejercicio05.dao.UserDao.getUser(UserDao.java:71)
+	at ejercicios.ejercicio05.dao.UserDao.getByEmail(UserDao.java:34)
+	at ejercicios.ejercicio05.service.UserServiceImpl.createUser(UserServiceImpl.java:30)
+	at PanelDeControl.Controller.Controller.register(Controller.java:97)
+	at PanelDeControl.Views.RegisterView$1.actionPerformed(RegisterView.java:104)
+	at java.desktop/javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:1972)
+	at java.desktop/javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2314)
+	at java.desktop/javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:407)
+	at java.desktop/javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:262)
+	at java.desktop/javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:279)
+	at java.desktop/java.awt.Component.processMouseEvent(Component.java:6621)
+	at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3404)
+	at java.desktop/java.awt.Component.processEvent(Component.java:6386)
+	at java.desktop/java.awt.Container.processEvent(Container.java:2266)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:4996)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2324)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4828)
+	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4948)
+	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4575)
+	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4516)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2310)
+	at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2780)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4828)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:775)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:98)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:747)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:745)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:744)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+2024-10-31 15:17:19 ERROR [AWT-EventQueue-0] P.Controller.Controller - Error al crear al usuarioejercicios.ejercicio05.service.UserException: Error registrando usuario
+2024-10-31 15:17:48 INFO  [AWT-EventQueue-0] P.Controller.Controller - Creando usuario
+2024-10-31 15:17:48 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Creando nuevo usuario: User(id=null, username=eo, email=eo, password=eo, createdDate=null, lastLoginDate=null)
+2024-10-31 15:17:48 WARN  [AWT-EventQueue-0] o.m.jdbc.message.server.ErrorPacket - Error: 1146-42S02: Table 'pedidos.usuarios' doesn't exist
+2024-10-31 15:17:48 ERROR [AWT-EventQueue-0] e.e.service.UserServiceImpl - Error creando usuario 
+java.sql.SQLSyntaxErrorException: (conn=584) Table 'pedidos.usuarios' doesn't exist
+	at org.mariadb.jdbc.export.ExceptionFactory.createException(ExceptionFactory.java:289)
+	at org.mariadb.jdbc.export.ExceptionFactory.create(ExceptionFactory.java:378)
+	at org.mariadb.jdbc.message.ClientMessage.readPacket(ClientMessage.java:189)
+	at org.mariadb.jdbc.client.impl.StandardClient.readPacket(StandardClient.java:1235)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResults(StandardClient.java:1174)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResponse(StandardClient.java:1093)
+	at org.mariadb.jdbc.client.impl.StandardClient.execute(StandardClient.java:1017)
+	at org.mariadb.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:101)
+	at org.mariadb.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:257)
+	at ejercicios.ejercicio05.dao.UserDao.getUser(UserDao.java:71)
+	at ejercicios.ejercicio05.dao.UserDao.getByEmail(UserDao.java:34)
+	at ejercicios.ejercicio05.service.UserServiceImpl.createUser(UserServiceImpl.java:30)
+	at PanelDeControl.Controller.Controller.register(Controller.java:97)
+	at PanelDeControl.Views.RegisterView$1.actionPerformed(RegisterView.java:104)
+	at java.desktop/javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:1972)
+	at java.desktop/javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2314)
+	at java.desktop/javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:407)
+	at java.desktop/javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:262)
+	at java.desktop/javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:279)
+	at java.desktop/java.awt.Component.processMouseEvent(Component.java:6621)
+	at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3404)
+	at java.desktop/java.awt.Component.processEvent(Component.java:6386)
+	at java.desktop/java.awt.Container.processEvent(Container.java:2266)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:4996)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2324)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4828)
+	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4948)
+	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4575)
+	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4516)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2310)
+	at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2780)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4828)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:775)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:98)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:747)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:745)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:744)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+2024-10-31 15:17:48 ERROR [AWT-EventQueue-0] P.Controller.Controller - Error al crear al usuarioejercicios.ejercicio05.service.UserException: Error registrando usuario
+2024-10-31 15:22:39 INFO  [AWT-EventQueue-0] P.Controller.Controller - Creando usuario
+2024-10-31 15:22:39 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Creando nuevo usuario: User(id=null, username=ea, email=ea, password=ea, createdDate=null, lastLoginDate=null)
+2024-10-31 15:22:39 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Usuario creado con éxito con id 12
+2024-10-31 15:22:44 INFO  [AWT-EventQueue-0] P.Controller.Controller - Iniciando sesion
+2024-10-31 15:22:44 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Realizando login con usuario ea
+2024-10-31 15:22:44 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Intentando login por email...
+2024-10-31 15:22:44 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Actualizando fecha de último login
+2024-10-31 15:22:44 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Login correcto
+2024-10-31 15:22:56 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Consultando usuario con id 12
+2024-10-31 15:22:56 INFO  [AWT-EventQueue-0] P.Controller.Controller - Cambiando password
+2024-10-31 15:22:56 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Actualizacion password de usuario con id: 12
+2024-10-31 15:22:56 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Password cambiada con exito
+2024-10-31 15:26:30 INFO  [AWT-EventQueue-0] P.Controller.Controller - Iniciando sesion
+2024-10-31 15:26:30 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Realizando login con usuario 
+2024-10-31 15:26:30 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Intentando login por email...
+2024-10-31 15:26:30 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Intentando login por username...
+2024-10-31 15:26:30 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - No existe usuario (email o username)
+2024-10-31 15:26:30 ERROR [AWT-EventQueue-0] P.Controller.Controller - Error al iniciar sesionejercicios.ejercicio05.service.UserNotFoundException: No existe usuario con el login indicado
+2024-10-31 15:53:20 INFO  [AWT-EventQueue-0] P.Controller.Controller - Creando usuario
+2024-10-31 15:53:20 WARN  [AWT-EventQueue-0] P.Controller.Controller - Campo vacio
+2024-10-31 15:53:24 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Creando nuevo usuario: User(id=null, username=, email=, password=, createdDate=null, lastLoginDate=null)
+2024-10-31 15:53:24 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Usuario creado con éxito con id 13
+2024-10-31 15:54:33 INFO  [AWT-EventQueue-0] P.Controller.Controller - Iniciando sesion
+2024-10-31 15:54:33 WARN  [AWT-EventQueue-0] P.Controller.Controller - Campo vacio
+2024-10-31 15:54:35 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Realizando login con usuario 
+2024-10-31 15:54:35 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Intentando login por email...
+2024-10-31 15:54:35 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Actualizando fecha de último login
+2024-10-31 15:54:35 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Login correcto
+2024-10-31 15:58:02 INFO  [AWT-EventQueue-0] P.Controller.Controller - Iniciando sesion
+2024-10-31 15:58:02 WARN  [AWT-EventQueue-0] P.Controller.Controller - Campo vacio
+2024-10-31 15:58:03 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Realizando login con usuario 
+2024-10-31 15:58:03 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Intentando login por email...
+2024-10-31 15:58:03 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Actualizando fecha de último login
+2024-10-31 15:58:03 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Login correcto
+2024-10-31 15:58:04 INFO  [AWT-EventQueue-0] P.Controller.Controller - Iniciando sesion
+2024-10-31 15:58:04 WARN  [AWT-EventQueue-0] P.Controller.Controller - Campo vacio
+2024-10-31 15:58:05 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Realizando login con usuario 
+2024-10-31 15:58:05 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Intentando login por email...
+2024-10-31 15:58:05 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Actualizando fecha de último login
+2024-10-31 15:58:05 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Login correcto
+2024-10-31 15:58:10 INFO  [AWT-EventQueue-0] P.Controller.Controller - Iniciando sesion
+2024-10-31 15:58:10 WARN  [AWT-EventQueue-0] P.Controller.Controller - Campo vacio
+2024-10-31 15:58:11 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Realizando login con usuario 
+2024-10-31 15:58:11 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Intentando login por email...
+2024-10-31 15:58:11 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Actualizando fecha de último login
+2024-10-31 15:58:11 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Login correcto
+2024-10-31 15:58:22 INFO  [AWT-EventQueue-0] P.Controller.Controller - Iniciando sesion
+2024-10-31 15:58:22 WARN  [AWT-EventQueue-0] P.Controller.Controller - Campo vacio
+2024-10-31 15:58:23 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Realizando login con usuario 
+2024-10-31 15:58:23 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Intentando login por email...
+2024-10-31 15:58:23 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Actualizando fecha de último login
+2024-10-31 15:58:23 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Login correcto
+2024-10-31 15:58:25 INFO  [AWT-EventQueue-0] P.Controller.Controller - Creando usuario
+2024-10-31 15:58:25 WARN  [AWT-EventQueue-0] P.Controller.Controller - Campo vacio
+2024-10-31 15:58:26 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Creando nuevo usuario: User(id=null, username=, email=, password=, createdDate=null, lastLoginDate=null)
+2024-10-31 15:58:26 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Usuario con email repetido
+2024-10-31 15:58:26 ERROR [AWT-EventQueue-0] P.Controller.Controller - Error al crear al usuarioejercicios.ejercicio05.service.DuplicateUserException: Ya existe usuario con el email indicado
+2024-10-31 15:59:05 INFO  [AWT-EventQueue-0] P.Controller.Controller - Iniciando sesion
+2024-10-31 15:59:05 WARN  [AWT-EventQueue-0] P.Controller.Controller - Campo vacio
+2024-10-31 15:59:07 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Realizando login con usuario 
+2024-10-31 15:59:07 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Intentando login por email...
+2024-10-31 15:59:07 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Intentando login por username...
+2024-10-31 15:59:07 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - No existe usuario (email o username)
+2024-10-31 15:59:07 ERROR [AWT-EventQueue-0] P.Controller.Controller - Error al iniciar sesionejercicios.ejercicio05.service.UserNotFoundException: No existe usuario con el login indicado
+2024-10-31 15:59:22 INFO  [AWT-EventQueue-0] P.Controller.Controller - Creando usuario
+2024-10-31 15:59:22 WARN  [AWT-EventQueue-0] P.Controller.Controller - Campo vacio
+2024-10-31 15:59:24 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Creando nuevo usuario: User(id=null, username=, email=, password=, createdDate=null, lastLoginDate=null)
+2024-10-31 15:59:24 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Usuario creado con éxito con id 14
+2024-10-31 15:59:26 INFO  [AWT-EventQueue-0] P.Controller.Controller - Iniciando sesion
+2024-10-31 15:59:26 WARN  [AWT-EventQueue-0] P.Controller.Controller - Campo vacio
+2024-10-31 15:59:26 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Realizando login con usuario 
+2024-10-31 15:59:26 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Intentando login por email...
+2024-10-31 15:59:26 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Actualizando fecha de último login
+2024-10-31 15:59:26 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Login correcto
+2024-10-31 15:59:28 INFO  [AWT-EventQueue-0] P.Controller.Controller - Creando usuario
+2024-10-31 15:59:28 WARN  [AWT-EventQueue-0] P.Controller.Controller - Campo vacio
+2024-10-31 15:59:29 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Creando nuevo usuario: User(id=null, username=, email=, password=, createdDate=null, lastLoginDate=null)
+2024-10-31 15:59:29 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Usuario con email repetido
+2024-10-31 15:59:29 ERROR [AWT-EventQueue-0] P.Controller.Controller - Error al crear al usuarioejercicios.ejercicio05.service.DuplicateUserException: Ya existe usuario con el email indicado
+2024-10-31 16:00:23 INFO  [AWT-EventQueue-0] P.Controller.Controller - Creando usuario
+2024-10-31 16:00:23 WARN  [AWT-EventQueue-0] P.Controller.Controller - Campo vacio
+2024-10-31 16:00:32 INFO  [AWT-EventQueue-0] P.Controller.Controller - Creando usuario
+2024-10-31 16:00:32 WARN  [AWT-EventQueue-0] P.Controller.Controller - Campo vacio
+2024-10-31 16:00:36 INFO  [AWT-EventQueue-0] P.Controller.Controller - Creando usuario
+2024-10-31 16:00:36 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Creando nuevo usuario: User(id=null, username=ea, email=ea, password=ea, createdDate=null, lastLoginDate=null)
+2024-10-31 16:00:36 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Usuario creado con éxito con id 15
+2024-10-31 16:00:39 INFO  [AWT-EventQueue-0] P.Controller.Controller - Iniciando sesion
+2024-10-31 16:00:39 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Realizando login con usuario ea
+2024-10-31 16:00:39 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Intentando login por email...
+2024-10-31 16:00:39 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Actualizando fecha de último login
+2024-10-31 16:00:39 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Login correcto
+2024-10-31 16:00:42 INFO  [AWT-EventQueue-0] P.Controller.Controller - Cambiando password
+2024-10-31 16:00:42 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Actualizacion password de usuario con id: 15
+2024-10-31 16:00:42 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Password cambiada con exito
+2024-10-31 16:00:44 INFO  [AWT-EventQueue-0] P.Controller.Controller - Cambiando password
+2024-10-31 16:00:44 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Actualizacion password de usuario con id: 15
+2024-10-31 16:00:44 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Pass indicada para cambio incorrecta 
+2024-10-31 16:00:44 ERROR [AWT-EventQueue-0] P.Controller.Controller - Error al cambiar la passwordejercicios.ejercicio05.service.UserUnauthorizedException: El password no es correcto
+2024-10-31 16:06:50 INFO  [AWT-EventQueue-0] P.Controller.Controller - Creando usuario
+2024-10-31 16:06:50 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Creando nuevo usuario: User(id=null, username=ea, email=ea, password=ea, createdDate=null, lastLoginDate=null)
+2024-10-31 16:06:50 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Usuario con email repetido
+2024-10-31 16:06:50 ERROR [AWT-EventQueue-0] P.Controller.Controller - Error al crear al usuarioejercicios.ejercicio05.service.DuplicateUserException: Ya existe usuario con el email indicado
+2024-10-31 16:07:06 INFO  [AWT-EventQueue-0] P.Controller.Controller - Creando usuario
+2024-10-31 16:07:06 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Creando nuevo usuario: User(id=null, username=ao, email=ao, password=ao, createdDate=null, lastLoginDate=null)
+2024-10-31 16:07:06 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Usuario creado con éxito con id 16
+2024-10-31 16:07:14 INFO  [AWT-EventQueue-0] P.Controller.Controller - Iniciando sesion
+2024-10-31 16:07:14 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Realizando login con usuario ao
+2024-10-31 16:07:14 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Intentando login por email...
+2024-10-31 16:07:14 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Actualizando fecha de último login
+2024-10-31 16:07:14 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Login correcto
+2024-10-31 16:07:21 INFO  [AWT-EventQueue-0] P.Controller.Controller - Cambiando password
+2024-10-31 16:07:21 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Actualizacion password de usuario con id: 16
+2024-10-31 16:07:21 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Password cambiada con exito
+2024-10-31 16:07:38 INFO  [AWT-EventQueue-0] P.Controller.Controller - Cambiando password
+2024-10-31 16:07:38 WARN  [AWT-EventQueue-0] P.Controller.Controller - Campo vacio
+2024-10-31 16:07:51 INFO  [AWT-EventQueue-0] P.Controller.Controller - Iniciando sesion
+2024-10-31 16:07:51 WARN  [AWT-EventQueue-0] P.Controller.Controller - Campo vacio
+2024-10-31 16:07:52 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Realizando login con usuario 
+2024-10-31 16:07:52 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Intentando login por email...
+2024-10-31 16:07:52 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Intentando login por username...
+2024-10-31 16:07:52 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - No existe usuario (email o username)
+2024-10-31 16:07:52 ERROR [AWT-EventQueue-0] P.Controller.Controller - Error al iniciar sesionejercicios.ejercicio05.service.UserNotFoundException: No existe usuario con el login indicado
+2024-10-31 16:07:55 INFO  [AWT-EventQueue-0] P.Controller.Controller - Creando usuario
+2024-10-31 16:07:55 WARN  [AWT-EventQueue-0] P.Controller.Controller - Campo vacio
+2024-10-31 16:37:41 INFO  [AWT-EventQueue-0] P.Controller.Controller - Creando usuario
+2024-10-31 16:37:41 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Consultando usuario con nombre ea
+2024-10-31 16:37:41 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Consultando usuario con id ea
+2024-10-31 16:37:41 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Creando nuevo usuario: User(id=null, username=ea, email=ea, password=ea, createdDate=null, lastLoginDate=null)
+2024-10-31 16:37:41 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Usuario con email repetido
+2024-10-31 16:37:41 ERROR [AWT-EventQueue-0] P.Controller.Controller - Error al crear al usuarioejercicios.ejercicio05.service.DuplicateUserException: Ya existe usuario con el email indicado
+2024-10-31 16:41:59 INFO  [AWT-EventQueue-0] P.Controller.Controller - Iniciando sesion
+2024-10-31 16:41:59 WARN  [AWT-EventQueue-0] P.Controller.Controller - Campo vacio
+2024-10-31 16:42:13 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Realizando login con usuario 
+2024-10-31 16:42:13 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Intentando login por email...
+2024-10-31 16:42:13 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Intentando login por username...
+2024-10-31 16:42:13 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - No existe usuario (email o username)
+2024-10-31 16:42:13 ERROR [AWT-EventQueue-0] P.Controller.Controller - Error al iniciar sesionejercicios.ejercicio05.service.UserNotFoundException: No existe usuario con el login indicado
+2024-10-31 16:42:32 INFO  [AWT-EventQueue-0] P.Controller.Controller - Iniciando sesion
+2024-10-31 16:42:32 WARN  [AWT-EventQueue-0] P.Controller.Controller - Campo vacio
+2024-10-31 16:42:33 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Realizando login con usuario 
+2024-10-31 16:42:33 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Intentando login por email...
+2024-10-31 16:42:33 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Intentando login por username...
+2024-10-31 16:42:33 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - No existe usuario (email o username)
+2024-10-31 16:42:33 ERROR [AWT-EventQueue-0] P.Controller.Controller - Error al iniciar sesionejercicios.ejercicio05.service.UserNotFoundException: No existe usuario con el login indicado
+2024-10-31 16:42:51 INFO  [AWT-EventQueue-0] P.Controller.Controller - Iniciando sesion
+2024-10-31 16:42:51 WARN  [AWT-EventQueue-0] P.Controller.Controller - Campo vacio
+2024-10-31 16:42:52 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Realizando login con usuario 
+2024-10-31 16:42:52 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Intentando login por email...
+2024-10-31 16:42:52 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Intentando login por username...
+2024-10-31 16:42:52 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - No existe usuario (email o username)
+2024-10-31 16:42:52 ERROR [AWT-EventQueue-0] P.Controller.Controller - Error al iniciar sesionejercicios.ejercicio05.service.UserNotFoundException: No existe usuario con el login indicado
+2024-10-31 16:50:32 INFO  [AWT-EventQueue-0] P.Controller.Controller - Iniciando sesion
+2024-10-31 16:50:32 WARN  [AWT-EventQueue-0] P.Controller.Controller - Campo vacio
+2024-10-31 16:50:33 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Realizando login con usuario 
+2024-10-31 16:50:33 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Intentando login por email...
+2024-10-31 16:50:33 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Intentando login por username...
+2024-10-31 16:50:33 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - No existe usuario (email o username)
+2024-10-31 16:50:33 ERROR [AWT-EventQueue-0] P.Controller.Controller - Error al iniciar sesionejercicios.ejercicio05.service.UserNotFoundException: No existe usuario con el login indicado
+2024-10-31 16:55:49 INFO  [AWT-EventQueue-0] P.Controller.Controller - Iniciando sesion
+2024-10-31 16:55:49 WARN  [AWT-EventQueue-0] P.Controller.Controller - Campo vacio
+2024-10-31 16:55:50 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Realizando login con usuario 
+2024-10-31 16:55:50 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Intentando login por email...
+2024-10-31 16:55:50 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Intentando login por username...
+2024-10-31 16:55:50 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - No existe usuario (email o username)
+2024-10-31 16:55:50 ERROR [AWT-EventQueue-0] P.Controller.Controller - Error al iniciar sesionejercicios.ejercicio05.service.UserNotFoundException: No existe usuario con el login indicado
+2024-10-31 16:55:59 INFO  [AWT-EventQueue-0] P.Controller.Controller - Iniciando sesion
+2024-10-31 16:55:59 WARN  [AWT-EventQueue-0] P.Controller.Controller - Campo vacio
+2024-10-31 16:56:01 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Realizando login con usuario 
+2024-10-31 16:56:01 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Intentando login por email...
+2024-10-31 16:56:01 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Intentando login por username...
+2024-10-31 16:56:01 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - No existe usuario (email o username)
+2024-10-31 16:56:01 ERROR [AWT-EventQueue-0] P.Controller.Controller - Error al iniciar sesionejercicios.ejercicio05.service.UserNotFoundException: No existe usuario con el login indicado
+2024-10-31 16:57:19 INFO  [AWT-EventQueue-0] P.Controller.Controller - Iniciando sesion
+2024-10-31 16:57:19 WARN  [AWT-EventQueue-0] P.Controller.Controller - Campo vacio
+2024-10-31 16:57:20 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Realizando login con usuario 
+2024-10-31 16:57:20 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Intentando login por email...
+2024-10-31 16:57:20 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Intentando login por username...
+2024-10-31 16:57:20 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - No existe usuario (email o username)
+2024-10-31 16:57:20 ERROR [AWT-EventQueue-0] P.Controller.Controller - Error al iniciar sesionejercicios.ejercicio05.service.UserNotFoundException: No existe usuario con el login indicado
+2024-10-31 17:00:59 INFO  [AWT-EventQueue-0] P.Controller.Controller - Creando usuario
+2024-10-31 17:00:59 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Consultando usuario con nombre ea
+2024-10-31 17:00:59 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Consultando usuario con id ea
+2024-10-31 17:00:59 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Creando nuevo usuario: User(id=null, username=ea, email=ea, password=ea, createdDate=null, lastLoginDate=null)
+2024-10-31 17:00:59 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Usuario con email repetido
+2024-10-31 17:00:59 ERROR [AWT-EventQueue-0] P.Controller.Controller - Error al crear al usuarioejercicios.ejercicio05.service.DuplicateUserException: Ya existe usuario con el email indicado
+2024-10-31 17:01:09 INFO  [AWT-EventQueue-0] P.Controller.Controller - Creando usuario
+2024-10-31 17:01:09 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Consultando usuario con nombre ao
+2024-10-31 17:01:09 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Consultando usuario con id ao
+2024-10-31 17:01:09 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Creando nuevo usuario: User(id=null, username=ao, email=ao, password=ao, createdDate=null, lastLoginDate=null)
+2024-10-31 17:01:09 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Usuario con email repetido
+2024-10-31 17:01:09 ERROR [AWT-EventQueue-0] P.Controller.Controller - Error al crear al usuarioejercicios.ejercicio05.service.DuplicateUserException: Ya existe usuario con el email indicado
+2024-10-31 17:01:15 INFO  [AWT-EventQueue-0] P.Controller.Controller - Creando usuario
+2024-10-31 17:01:15 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Consultando usuario con nombre ai
+2024-10-31 17:01:15 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Consultando usuario con id ai
+2024-10-31 17:01:15 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Creando nuevo usuario: User(id=null, username=ai, email=ai, password=ai, createdDate=null, lastLoginDate=null)
+2024-10-31 17:01:15 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Usuario creado con éxito con id 17
+2024-10-31 17:01:48 INFO  [AWT-EventQueue-0] P.Controller.Controller - Iniciando sesion
+2024-10-31 17:02:35 INFO  [AWT-EventQueue-0] P.Controller.Controller - Creando usuario
+2024-10-31 17:02:35 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Consultando usuario con nombre ea
+2024-10-31 17:02:35 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Consultando usuario con id ea
+2024-10-31 17:02:35 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Creando nuevo usuario: User(id=null, username=ea, email=ea, password=ea, createdDate=null, lastLoginDate=null)
+2024-10-31 17:02:35 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Usuario creado con éxito con id 18
+2024-10-31 17:02:39 INFO  [AWT-EventQueue-0] P.Controller.Controller - Iniciando sesion
+2024-10-31 17:02:39 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Realizando login con usuario ea
+2024-10-31 17:02:39 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Intentando login por email...
+2024-10-31 17:02:39 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Actualizando fecha de último login
+2024-10-31 17:02:39 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Login correcto
+2024-10-31 17:02:42 INFO  [AWT-EventQueue-0] P.Controller.Controller - Iniciando sesion
+2024-10-31 17:02:42 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Realizando login con usuario ea
+2024-10-31 17:02:42 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Intentando login por email...
+2024-10-31 17:02:42 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Actualizando fecha de último login
+2024-10-31 17:02:42 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Login correcto
+2024-10-31 17:02:48 INFO  [AWT-EventQueue-0] P.Controller.Controller - Iniciando sesion
+2024-10-31 17:02:48 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Realizando login con usuario dadada
+2024-10-31 17:02:48 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Intentando login por email...
+2024-10-31 17:02:48 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Intentando login por username...
+2024-10-31 17:02:48 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - No existe usuario (email o username)
+2024-10-31 17:02:48 ERROR [AWT-EventQueue-0] P.Controller.Controller - Error al iniciar sesionejercicios.ejercicio05.service.UserNotFoundException: No existe usuario con el login indicado
+2024-10-31 17:02:56 INFO  [AWT-EventQueue-0] P.Controller.Controller - Iniciando sesion
+2024-10-31 17:02:56 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Realizando login con usuario dwad
+2024-10-31 17:02:56 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Intentando login por email...
+2024-10-31 17:02:56 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Intentando login por username...
+2024-10-31 17:02:56 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - No existe usuario (email o username)
+2024-10-31 17:02:56 ERROR [AWT-EventQueue-0] P.Controller.Controller - Error al iniciar sesionejercicios.ejercicio05.service.UserNotFoundException: No existe usuario con el login indicado
+2024-10-31 17:09:26 INFO  [AWT-EventQueue-0] P.Controller.Controller - Creando usuario
+2024-10-31 17:09:26 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Consultando usuario con nombre hola
+2024-10-31 17:09:26 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Consultando usuario con id hola
+2024-10-31 17:09:26 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Creando nuevo usuario: User(id=null, username=hola, email=hola, password=hola, createdDate=null, lastLoginDate=null)
+2024-10-31 17:09:26 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Usuario creado con éxito con id 19
+2024-10-31 17:09:39 INFO  [AWT-EventQueue-0] P.Controller.Controller - Iniciando sesion
+2024-10-31 17:09:56 INFO  [AWT-EventQueue-0] P.Controller.Controller - Iniciando sesion
+2024-10-31 17:09:58 INFO  [AWT-EventQueue-0] P.Controller.Controller - Iniciando sesion
+2024-10-31 17:10:38 INFO  [AWT-EventQueue-0] P.Controller.Controller - Iniciando sesion
+2024-10-31 17:10:46 INFO  [AWT-EventQueue-0] P.Controller.Controller - Creando usuario
+2024-10-31 17:10:46 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Consultando usuario con nombre de
+2024-10-31 17:10:46 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Consultando usuario con id de
+2024-10-31 17:10:46 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Creando nuevo usuario: User(id=null, username=de, email=de, password=de, createdDate=null, lastLoginDate=null)
+2024-10-31 17:10:46 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Usuario creado con éxito con id 20
+2024-10-31 17:10:47 INFO  [AWT-EventQueue-0] P.Controller.Controller - Iniciando sesion
+2024-10-31 17:12:23 INFO  [AWT-EventQueue-0] P.Controller.Controller - Iniciando sesion
+2024-10-31 17:13:03 INFO  [AWT-EventQueue-0] P.Controller.Controller - Iniciando sesion
+2024-10-31 17:14:16 INFO  [AWT-EventQueue-0] P.Controller.Controller - Creando usuario
+2024-10-31 17:14:16 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Consultando usuario con nombre qw
+2024-10-31 17:14:16 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Consultando usuario con id qw
+2024-10-31 17:14:16 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Creando nuevo usuario: User(id=null, username=qw, email=qw, password=qw, createdDate=null, lastLoginDate=null)
+2024-10-31 17:14:16 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Usuario creado con éxito con id 21
+2024-10-31 17:14:19 INFO  [AWT-EventQueue-0] P.Controller.Controller - Iniciando sesion
+2024-10-31 17:14:19 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Realizando login con usuario sfsfes
+2024-10-31 17:14:19 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Intentando login por email...
+2024-10-31 17:14:19 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Intentando login por username...
+2024-10-31 17:14:19 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - No existe usuario (email o username)
+2024-10-31 17:14:19 ERROR [AWT-EventQueue-0] P.Controller.Controller - Error al iniciar sesionejercicios.ejercicio05.service.UserNotFoundException: No existe usuario con el login indicado
+2024-10-31 17:15:06 INFO  [AWT-EventQueue-0] P.Controller.Controller - Iniciando sesion
+2024-10-31 17:15:06 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Realizando login con usuario hola
+2024-10-31 17:15:06 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Intentando login por email...
+2024-10-31 17:15:06 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Actualizando fecha de último login
+2024-10-31 17:15:06 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Login correcto
+2024-10-31 17:15:20 INFO  [AWT-EventQueue-0] P.Controller.Controller - Iniciando sesion
+2024-10-31 17:15:20 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Realizando login con usuario hola
+2024-10-31 17:15:20 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Intentando login por email...
+2024-10-31 17:15:20 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Actualizando fecha de último login
+2024-10-31 17:15:20 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Login correcto
+2024-10-31 17:15:46 INFO  [AWT-EventQueue-0] P.Controller.Controller - Creando usuario
+2024-10-31 17:15:46 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Consultando usuario con nombre dadw
+2024-10-31 17:15:46 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Consultando usuario con id wadwd
+2024-10-31 17:15:46 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Creando nuevo usuario: User(id=null, username=dadw, email=wadwd, password=dawdawd, createdDate=null, lastLoginDate=null)
+2024-10-31 17:15:46 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Usuario creado con éxito con id 22
+2024-10-31 17:21:34 INFO  [AWT-EventQueue-0] P.Controller.Controller - Iniciando sesion
+2024-10-31 17:21:34 WARN  [AWT-EventQueue-0] P.Controller.Controller - Campo vacio
+2024-10-31 17:21:39 INFO  [AWT-EventQueue-0] P.Controller.Controller - Iniciando sesion
+2024-10-31 17:21:39 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Realizando login con usuario a
+2024-10-31 17:21:39 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Intentando login por email...
+2024-10-31 17:21:39 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Intentando login por username...
+2024-10-31 17:21:39 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - No existe usuario (email o username)
+2024-10-31 17:21:39 ERROR [AWT-EventQueue-0] P.Controller.Controller - Error al iniciar sesionejercicios.ejercicio05.service.UserNotFoundException: No existe usuario con el login indicado
+2024-10-31 17:21:49 INFO  [AWT-EventQueue-0] P.Controller.Controller - Creando usuario
+2024-10-31 17:21:49 WARN  [AWT-EventQueue-0] P.Controller.Controller - Campo vacio
+2024-10-31 17:21:59 INFO  [AWT-EventQueue-0] P.Controller.Controller - Creando usuario
+2024-10-31 17:21:59 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Consultando usuario con nombre a
+2024-10-31 17:21:59 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Consultando usuario con id a
+2024-10-31 17:21:59 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Creando nuevo usuario: User(id=null, username=a, email=a, password=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa, createdDate=null, lastLoginDate=null)
+2024-10-31 17:21:59 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Usuario creado con éxito con id 23
+2024-10-31 17:22:25 INFO  [AWT-EventQueue-0] P.Controller.Controller - Creando usuario
+2024-10-31 17:22:25 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Consultando usuario con nombre a
+2024-10-31 17:22:25 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Consultando usuario con id a
+2024-10-31 17:22:25 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Creando nuevo usuario: User(id=null, username=a, email=a, password=aaaaaa, createdDate=null, lastLoginDate=null)
+2024-10-31 17:22:25 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Usuario con email repetido
+2024-10-31 17:22:25 ERROR [AWT-EventQueue-0] P.Controller.Controller - Error al crear al usuarioejercicios.ejercicio05.service.DuplicateUserException: Ya existe usuario con el email indicado
+2024-10-31 17:22:37 INFO  [AWT-EventQueue-0] P.Controller.Controller - Creando usuario
+2024-10-31 17:22:37 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Consultando usuario con nombre b
+2024-10-31 17:22:37 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Consultando usuario con id b
+2024-10-31 17:22:37 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Creando nuevo usuario: User(id=null, username=b, email=b, password=b, createdDate=null, lastLoginDate=null)
+2024-10-31 17:22:37 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Usuario creado con éxito con id 24
+2024-10-31 17:22:41 INFO  [AWT-EventQueue-0] P.Controller.Controller - Iniciando sesion
+2024-10-31 17:22:41 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Realizando login con usuario b
+2024-10-31 17:22:41 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Intentando login por email...
+2024-10-31 17:22:41 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Actualizando fecha de último login
+2024-10-31 17:22:41 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Login correcto
+2024-10-31 17:22:45 INFO  [AWT-EventQueue-0] P.Controller.Controller - Cambiando password
+2024-10-31 17:22:45 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Actualizacion password de usuario con id: 24
+2024-10-31 17:22:45 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Pass antigua igual a la nueva, no se hará el cambio 
+2024-10-31 17:22:45 ERROR [AWT-EventQueue-0] P.Controller.Controller - Error al cambiar la passwordejercicios.ejercicio05.service.UserUnauthorizedException: La password nueva no puede ser igual a la antigua
+2024-10-31 17:22:59 INFO  [AWT-EventQueue-0] P.Controller.Controller - Cambiando password
+2024-10-31 17:22:59 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Actualizacion password de usuario con id: 24
+2024-10-31 17:22:59 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Pass indicada para cambio incorrecta 
+2024-10-31 17:22:59 ERROR [AWT-EventQueue-0] P.Controller.Controller - Error al cambiar la passwordejercicios.ejercicio05.service.UserUnauthorizedException: El password no es correcto
+2024-10-31 17:23:11 INFO  [AWT-EventQueue-0] P.Controller.Controller - Iniciando sesion
+2024-10-31 17:23:11 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Realizando login con usuario b
+2024-10-31 17:23:11 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Intentando login por email...
+2024-10-31 17:23:11 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Actualizando fecha de último login
+2024-10-31 17:23:11 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Login correcto
+2024-10-31 17:25:03 INFO  [AWT-EventQueue-0] P.Controller.Controller - Creando usuario
+2024-10-31 17:25:03 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Consultando usuario con nombre b
+2024-10-31 17:25:03 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Consultando usuario con id b
+2024-10-31 17:25:03 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Creando nuevo usuario: User(id=null, username=b, email=b, password=b, createdDate=null, lastLoginDate=null)
+2024-10-31 17:25:03 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Usuario con email repetido
+2024-10-31 17:25:03 ERROR [AWT-EventQueue-0] P.Controller.Controller - Error al crear al usuarioejercicios.ejercicio05.service.DuplicateUserException: Ya existe usuario con el email indicado
+2024-10-31 17:26:24 INFO  [AWT-EventQueue-0] P.Controller.Controller - Creando usuario
+2024-10-31 17:26:24 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Consultando usuario con nombre b
+2024-10-31 17:26:24 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Consultando usuario con id b
+2024-10-31 17:26:24 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Creando nuevo usuario: User(id=null, username=b, email=b, password=b, createdDate=null, lastLoginDate=null)
+2024-10-31 17:26:24 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Usuario con email repetido
+2024-10-31 17:26:40 INFO  [AWT-EventQueue-0] P.Controller.Controller - Creando usuario
+2024-10-31 17:26:40 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Consultando usuario con nombre b
+2024-10-31 17:26:40 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Consultando usuario con id b
+2024-10-31 17:26:40 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Creando nuevo usuario: User(id=null, username=b, email=b, password=b, createdDate=null, lastLoginDate=null)
+2024-10-31 17:26:40 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Usuario con email repetido
+2024-10-31 17:27:56 INFO  [AWT-EventQueue-0] P.Controller.Controller - Creando usuario
+2024-10-31 17:27:56 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Consultando usuario con nombre b
+2024-10-31 17:27:56 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Consultando usuario con id b
+2024-10-31 17:27:56 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Creando nuevo usuario: User(id=null, username=b, email=b, password=b, createdDate=null, lastLoginDate=null)
+2024-10-31 17:27:56 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Usuario con email repetido
+2024-10-31 17:28:22 INFO  [AWT-EventQueue-0] P.Controller.Controller - Creando usuario
+2024-10-31 17:28:22 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Consultando usuario con nombre b
+2024-10-31 17:28:22 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Consultando usuario con id b
+2024-10-31 17:28:22 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Creando nuevo usuario: User(id=null, username=b, email=b, password=b, createdDate=null, lastLoginDate=null)
+2024-10-31 17:28:22 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Usuario con email repetido
+2024-10-31 17:28:55 INFO  [AWT-EventQueue-0] P.Controller.Controller - Creando usuario
+2024-10-31 17:28:55 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Consultando usuario con nombre b
+2024-10-31 17:28:55 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Consultando usuario con id b
+2024-10-31 17:28:55 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Creando nuevo usuario: User(id=null, username=b, email=b, password=b, createdDate=null, lastLoginDate=null)
+2024-10-31 17:28:55 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Usuario con email repetido
+2024-10-31 17:29:25 INFO  [AWT-EventQueue-0] P.Controller.Controller - Creando usuario
+2024-10-31 17:29:25 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Consultando usuario con nombre b
+2024-10-31 17:29:25 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Consultando usuario con id c
+2024-10-31 17:29:25 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Creando nuevo usuario: User(id=null, username=b, email=c, password=b, createdDate=null, lastLoginDate=null)
+2024-10-31 17:29:25 WARN  [AWT-EventQueue-0] o.m.jdbc.message.server.ErrorPacket - Error: 1062-23000: Duplicate entry 'b' for key 'username'
+2024-10-31 17:29:25 ERROR [AWT-EventQueue-0] e.e.service.UserServiceImpl - Error creando usuario 
+java.sql.SQLIntegrityConstraintViolationException: (conn=686) Duplicate entry 'b' for key 'username'
+	at org.mariadb.jdbc.export.ExceptionFactory.createException(ExceptionFactory.java:297)
+	at org.mariadb.jdbc.export.ExceptionFactory.create(ExceptionFactory.java:378)
+	at org.mariadb.jdbc.message.ClientMessage.readPacket(ClientMessage.java:189)
+	at org.mariadb.jdbc.client.impl.StandardClient.readPacket(StandardClient.java:1235)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResults(StandardClient.java:1174)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResponse(StandardClient.java:1093)
+	at org.mariadb.jdbc.client.impl.StandardClient.execute(StandardClient.java:1017)
+	at org.mariadb.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:101)
+	at org.mariadb.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:237)
+	at ejercicios.ejercicio05.dao.UserDao.insert(UserDao.java:22)
+	at ejercicios.ejercicio05.service.UserServiceImpl.createUser(UserServiceImpl.java:46)
+	at PanelDeControl.Controller.Controller.register(Controller.java:110)
+	at PanelDeControl.Views.RegisterView$3.actionPerformed(RegisterView.java:129)
+	at java.desktop/javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:1972)
+	at java.desktop/javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2314)
+	at java.desktop/javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:407)
+	at java.desktop/javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:262)
+	at java.desktop/javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:279)
+	at java.desktop/java.awt.Component.processMouseEvent(Component.java:6621)
+	at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3404)
+	at java.desktop/java.awt.Component.processEvent(Component.java:6386)
+	at java.desktop/java.awt.Container.processEvent(Container.java:2266)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:4996)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2324)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4828)
+	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4948)
+	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4575)
+	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4516)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2310)
+	at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2780)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4828)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:775)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:98)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:747)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:745)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:744)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+2024-10-31 17:29:42 INFO  [AWT-EventQueue-0] P.Controller.Controller - Creando usuario
+2024-10-31 17:29:42 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Consultando usuario con nombre b
+2024-10-31 17:29:42 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Consultando usuario con id c
+2024-10-31 17:29:42 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Creando nuevo usuario: User(id=null, username=b, email=c, password=b, createdDate=null, lastLoginDate=null)
+2024-10-31 17:29:42 WARN  [AWT-EventQueue-0] o.m.jdbc.message.server.ErrorPacket - Error: 1062-23000: Duplicate entry 'b' for key 'username'
+2024-10-31 17:29:42 ERROR [AWT-EventQueue-0] e.e.service.UserServiceImpl - Error creando usuario 
+java.sql.SQLIntegrityConstraintViolationException: (conn=689) Duplicate entry 'b' for key 'username'
+	at org.mariadb.jdbc.export.ExceptionFactory.createException(ExceptionFactory.java:297)
+	at org.mariadb.jdbc.export.ExceptionFactory.create(ExceptionFactory.java:378)
+	at org.mariadb.jdbc.message.ClientMessage.readPacket(ClientMessage.java:189)
+	at org.mariadb.jdbc.client.impl.StandardClient.readPacket(StandardClient.java:1235)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResults(StandardClient.java:1174)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResponse(StandardClient.java:1093)
+	at org.mariadb.jdbc.client.impl.StandardClient.execute(StandardClient.java:1017)
+	at org.mariadb.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:101)
+	at org.mariadb.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:237)
+	at ejercicios.ejercicio05.dao.UserDao.insert(UserDao.java:22)
+	at ejercicios.ejercicio05.service.UserServiceImpl.createUser(UserServiceImpl.java:46)
+	at PanelDeControl.Controller.Controller.register(Controller.java:110)
+	at PanelDeControl.Views.RegisterView$3.actionPerformed(RegisterView.java:129)
+	at java.desktop/javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:1972)
+	at java.desktop/javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2314)
+	at java.desktop/javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:407)
+	at java.desktop/javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:262)
+	at java.desktop/javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:279)
+	at java.desktop/java.awt.Component.processMouseEvent(Component.java:6621)
+	at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3404)
+	at java.desktop/java.awt.Component.processEvent(Component.java:6386)
+	at java.desktop/java.awt.Container.processEvent(Container.java:2266)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:4996)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2324)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4828)
+	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4948)
+	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4575)
+	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4516)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2310)
+	at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2780)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4828)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:775)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:98)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:747)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:745)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:744)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+2024-10-31 17:30:06 INFO  [AWT-EventQueue-0] P.Controller.Controller - Creando usuario
+2024-10-31 17:30:06 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Consultando usuario con nombre b
+2024-10-31 17:30:06 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Consultando usuario con id c
+2024-10-31 17:30:06 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Creando nuevo usuario: User(id=null, username=b, email=c, password=b, createdDate=null, lastLoginDate=null)
+2024-10-31 17:30:06 WARN  [AWT-EventQueue-0] o.m.jdbc.message.server.ErrorPacket - Error: 1062-23000: Duplicate entry 'b' for key 'username'
+2024-10-31 17:30:06 ERROR [AWT-EventQueue-0] e.e.service.UserServiceImpl - Error creando usuario 
+java.sql.SQLIntegrityConstraintViolationException: (conn=692) Duplicate entry 'b' for key 'username'
+	at org.mariadb.jdbc.export.ExceptionFactory.createException(ExceptionFactory.java:297)
+	at org.mariadb.jdbc.export.ExceptionFactory.create(ExceptionFactory.java:378)
+	at org.mariadb.jdbc.message.ClientMessage.readPacket(ClientMessage.java:189)
+	at org.mariadb.jdbc.client.impl.StandardClient.readPacket(StandardClient.java:1235)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResults(StandardClient.java:1174)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResponse(StandardClient.java:1093)
+	at org.mariadb.jdbc.client.impl.StandardClient.execute(StandardClient.java:1017)
+	at org.mariadb.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:101)
+	at org.mariadb.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:237)
+	at ejercicios.ejercicio05.dao.UserDao.insert(UserDao.java:22)
+	at ejercicios.ejercicio05.service.UserServiceImpl.createUser(UserServiceImpl.java:46)
+	at PanelDeControl.Controller.Controller.register(Controller.java:110)
+	at PanelDeControl.Views.RegisterView$3.actionPerformed(RegisterView.java:129)
+	at java.desktop/javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:1972)
+	at java.desktop/javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2314)
+	at java.desktop/javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:407)
+	at java.desktop/javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:262)
+	at java.desktop/javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:279)
+	at java.desktop/java.awt.Component.processMouseEvent(Component.java:6621)
+	at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3404)
+	at java.desktop/java.awt.Component.processEvent(Component.java:6386)
+	at java.desktop/java.awt.Container.processEvent(Container.java:2266)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:4996)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2324)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4828)
+	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4948)
+	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4575)
+	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4516)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2310)
+	at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2780)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4828)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:775)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:98)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:747)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:745)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:744)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+2024-10-31 17:30:18 INFO  [AWT-EventQueue-0] P.Controller.Controller - Creando usuario
+2024-10-31 17:30:18 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Consultando usuario con nombre b
+2024-10-31 17:30:18 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Consultando usuario con id b
+2024-10-31 17:30:18 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Creando nuevo usuario: User(id=null, username=b, email=b, password=b, createdDate=null, lastLoginDate=null)
+2024-10-31 17:30:18 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Usuario con email repetido
+2024-10-31 17:30:24 INFO  [AWT-EventQueue-0] P.Controller.Controller - Creando usuario
+2024-10-31 17:30:24 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Consultando usuario con nombre c
+2024-10-31 17:30:24 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Consultando usuario con id b
+2024-10-31 17:30:24 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Creando nuevo usuario: User(id=null, username=c, email=b, password=b, createdDate=null, lastLoginDate=null)
+2024-10-31 17:30:24 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Usuario con email repetido
+2024-10-31 17:30:32 INFO  [AWT-EventQueue-0] P.Controller.Controller - Creando usuario
+2024-10-31 17:30:32 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Consultando usuario con nombre b
+2024-10-31 17:30:32 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Consultando usuario con id c
+2024-10-31 17:30:32 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Creando nuevo usuario: User(id=null, username=b, email=c, password=b, createdDate=null, lastLoginDate=null)
+2024-10-31 17:30:32 WARN  [AWT-EventQueue-0] o.m.jdbc.message.server.ErrorPacket - Error: 1062-23000: Duplicate entry 'b' for key 'username'
+2024-10-31 17:30:32 ERROR [AWT-EventQueue-0] e.e.service.UserServiceImpl - Error creando usuario 
+java.sql.SQLIntegrityConstraintViolationException: (conn=701) Duplicate entry 'b' for key 'username'
+	at org.mariadb.jdbc.export.ExceptionFactory.createException(ExceptionFactory.java:297)
+	at org.mariadb.jdbc.export.ExceptionFactory.create(ExceptionFactory.java:378)
+	at org.mariadb.jdbc.message.ClientMessage.readPacket(ClientMessage.java:189)
+	at org.mariadb.jdbc.client.impl.StandardClient.readPacket(StandardClient.java:1235)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResults(StandardClient.java:1174)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResponse(StandardClient.java:1093)
+	at org.mariadb.jdbc.client.impl.StandardClient.execute(StandardClient.java:1017)
+	at org.mariadb.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:101)
+	at org.mariadb.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:237)
+	at ejercicios.ejercicio05.dao.UserDao.insert(UserDao.java:22)
+	at ejercicios.ejercicio05.service.UserServiceImpl.createUser(UserServiceImpl.java:46)
+	at PanelDeControl.Controller.Controller.register(Controller.java:110)
+	at PanelDeControl.Views.RegisterView$3.actionPerformed(RegisterView.java:129)
+	at java.desktop/javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:1972)
+	at java.desktop/javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2314)
+	at java.desktop/javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:407)
+	at java.desktop/javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:262)
+	at java.desktop/javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:279)
+	at java.desktop/java.awt.Component.processMouseEvent(Component.java:6621)
+	at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3404)
+	at java.desktop/java.awt.Component.processEvent(Component.java:6386)
+	at java.desktop/java.awt.Container.processEvent(Container.java:2266)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:4996)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2324)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4828)
+	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4948)
+	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4575)
+	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4516)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2310)
+	at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2780)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4828)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:775)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:98)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:747)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:745)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:744)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+2024-10-31 17:30:36 INFO  [AWT-EventQueue-0] P.Controller.Controller - Creando usuario
+2024-10-31 17:30:36 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Consultando usuario con nombre b
+2024-10-31 17:30:36 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Consultando usuario con id c
+2024-10-31 17:30:36 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Creando nuevo usuario: User(id=null, username=b, email=c, password=b, createdDate=null, lastLoginDate=null)
+2024-10-31 17:30:36 WARN  [AWT-EventQueue-0] o.m.jdbc.message.server.ErrorPacket - Error: 1062-23000: Duplicate entry 'b' for key 'username'
+2024-10-31 17:30:36 ERROR [AWT-EventQueue-0] e.e.service.UserServiceImpl - Error creando usuario 
+java.sql.SQLIntegrityConstraintViolationException: (conn=704) Duplicate entry 'b' for key 'username'
+	at org.mariadb.jdbc.export.ExceptionFactory.createException(ExceptionFactory.java:297)
+	at org.mariadb.jdbc.export.ExceptionFactory.create(ExceptionFactory.java:378)
+	at org.mariadb.jdbc.message.ClientMessage.readPacket(ClientMessage.java:189)
+	at org.mariadb.jdbc.client.impl.StandardClient.readPacket(StandardClient.java:1235)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResults(StandardClient.java:1174)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResponse(StandardClient.java:1093)
+	at org.mariadb.jdbc.client.impl.StandardClient.execute(StandardClient.java:1017)
+	at org.mariadb.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:101)
+	at org.mariadb.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:237)
+	at ejercicios.ejercicio05.dao.UserDao.insert(UserDao.java:22)
+	at ejercicios.ejercicio05.service.UserServiceImpl.createUser(UserServiceImpl.java:46)
+	at PanelDeControl.Controller.Controller.register(Controller.java:110)
+	at PanelDeControl.Views.RegisterView$3.actionPerformed(RegisterView.java:129)
+	at java.desktop/javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:1972)
+	at java.desktop/javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2314)
+	at java.desktop/javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:407)
+	at java.desktop/javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:262)
+	at java.desktop/javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:279)
+	at java.desktop/java.awt.Component.processMouseEvent(Component.java:6621)
+	at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3404)
+	at java.desktop/java.awt.Component.processEvent(Component.java:6386)
+	at java.desktop/java.awt.Container.processEvent(Container.java:2266)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:4996)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2324)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4828)
+	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4948)
+	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4575)
+	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4516)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2310)
+	at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2780)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4828)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:775)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:98)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:747)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:745)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:744)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+2024-10-31 17:34:01 INFO  [AWT-EventQueue-0] P.Controller.Controller - Iniciando sesion
+2024-10-31 17:34:01 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Consultando usuario con nombre g
+2024-10-31 17:36:48 INFO  [AWT-EventQueue-0] P.Controller.Controller - Iniciando sesion
+2024-10-31 17:36:48 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Consultando usuario con nombre b
+2024-10-31 17:37:23 INFO  [AWT-EventQueue-0] P.Controller.Controller - Creando usuario
+2024-10-31 17:37:23 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Consultando usuario con nombre a
+2024-10-31 17:37:23 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Consultando usuario con id a
+2024-10-31 17:37:23 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Creando nuevo usuario: User(id=null, username=a, email=a, password=a, createdDate=null, lastLoginDate=null)
+2024-10-31 17:37:23 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Usuario creado con éxito con id 30
+2024-10-31 17:37:25 INFO  [AWT-EventQueue-0] P.Controller.Controller - Iniciando sesion
+2024-10-31 17:37:25 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Consultando usuario con nombre a
+2024-10-31 17:38:57 INFO  [AWT-EventQueue-0] P.Controller.Controller - Iniciando sesion
+2024-10-31 17:38:57 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Realizando login con usuario a
+2024-10-31 17:38:57 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Intentando login por email...
+2024-10-31 17:38:57 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Actualizando fecha de último login
+2024-10-31 17:38:57 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Login correcto
+2024-10-31 17:39:01 INFO  [AWT-EventQueue-0] P.Controller.Controller - Creando usuario
+2024-10-31 17:39:01 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Creando nuevo usuario: User(id=null, username=a, email=a, password=a, createdDate=null, lastLoginDate=null)
+2024-10-31 17:39:01 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Usuario con email repetido
+2024-10-31 17:39:08 INFO  [AWT-EventQueue-0] P.Controller.Controller - Creando usuario
+2024-10-31 17:39:08 WARN  [AWT-EventQueue-0] P.Controller.Controller - Campo vacio
+2024-10-31 17:39:11 INFO  [AWT-EventQueue-0] P.Controller.Controller - Iniciando sesion
+2024-10-31 17:39:11 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Realizando login con usuario a
+2024-10-31 17:39:11 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Intentando login por email...
+2024-10-31 17:39:11 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Actualizando fecha de último login
+2024-10-31 17:39:11 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Login correcto
+2024-10-31 17:39:14 INFO  [AWT-EventQueue-0] P.Controller.Controller - Cambiando password
+2024-10-31 17:39:14 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Actualizacion password de usuario con id: 30
+2024-10-31 17:39:14 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Pass antigua igual a la nueva, no se hará el cambio 
+2024-10-31 17:39:21 INFO  [AWT-EventQueue-0] P.Controller.Controller - Cambiando password
+2024-10-31 17:39:21 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Actualizacion password de usuario con id: 30
+2024-10-31 17:39:21 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Pass indicada para cambio incorrecta 
+2024-10-31 17:41:36 DEBUG [AWT-EventQueue-0] P.Controller.Controller - Iniciando sesion
+2024-10-31 17:41:36 WARN  [AWT-EventQueue-0] P.Controller.Controller - Campo vacio
+2024-10-31 17:41:41 DEBUG [AWT-EventQueue-0] P.Controller.Controller - Iniciando sesion
+2024-10-31 17:41:41 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Realizando login con usuario b
+2024-10-31 17:41:41 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Intentando login por email...
+2024-10-31 17:41:41 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Intentando login por username...
+2024-10-31 17:41:41 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - No existe usuario (email o username)
+2024-10-31 17:41:46 DEBUG [AWT-EventQueue-0] P.Controller.Controller - Creando usuario
+2024-10-31 17:41:46 WARN  [AWT-EventQueue-0] P.Controller.Controller - Campo vacio
+2024-10-31 17:41:50 DEBUG [AWT-EventQueue-0] P.Controller.Controller - Creando usuario
+2024-10-31 17:41:50 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Creando nuevo usuario: User(id=null, username=b, email=b, password=b, createdDate=null, lastLoginDate=null)
+2024-10-31 17:41:50 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Usuario creado con éxito con id 31
+2024-10-31 17:41:56 DEBUG [AWT-EventQueue-0] P.Controller.Controller - Iniciando sesion
+2024-10-31 17:41:56 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Realizando login con usuario b
+2024-10-31 17:41:56 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Intentando login por email...
+2024-10-31 17:41:56 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Password incorrecta
+2024-10-31 17:42:26 DEBUG [AWT-EventQueue-0] P.Controller.Controller - Iniciando sesion
+2024-10-31 17:42:26 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Realizando login con usuario b
+2024-10-31 17:42:26 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Intentando login por email...
+2024-10-31 17:42:26 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Actualizando fecha de último login
+2024-10-31 17:42:26 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Login correcto
+2024-10-31 17:42:32 DEBUG [AWT-EventQueue-0] P.Controller.Controller - Cambiando password
+2024-10-31 17:42:32 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Actualizacion password de usuario con id: 31
+2024-10-31 17:42:32 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Pass indicada para cambio incorrecta 
+2024-10-31 17:42:45 DEBUG [AWT-EventQueue-0] P.Controller.Controller - Cambiando password
+2024-10-31 17:42:45 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Actualizacion password de usuario con id: 31
+2024-10-31 17:42:45 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Pass antigua igual a la nueva, no se hará el cambio 
+2024-10-31 17:42:49 DEBUG [AWT-EventQueue-0] P.Controller.Controller - Cambiando password
+2024-10-31 17:42:49 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Actualizacion password de usuario con id: 31
+2024-10-31 17:42:49 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Pass antigua igual a la nueva, no se hará el cambio 
+2024-10-31 17:42:54 DEBUG [AWT-EventQueue-0] P.Controller.Controller - Cambiando password
+2024-10-31 17:42:54 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Actualizacion password de usuario con id: 31
+2024-10-31 17:42:54 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Password cambiada con exito
+2024-10-31 17:43:04 DEBUG [AWT-EventQueue-0] P.Controller.Controller - Iniciando sesion
+2024-10-31 17:43:04 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Realizando login con usuario b
+2024-10-31 17:43:04 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Intentando login por email...
+2024-10-31 17:43:04 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Actualizando fecha de último login
+2024-10-31 17:43:04 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Login correcto
+2024-10-31 17:43:09 DEBUG [AWT-EventQueue-0] P.Controller.Controller - Iniciando sesion
+2024-10-31 17:43:09 WARN  [AWT-EventQueue-0] P.Controller.Controller - Campo vacio
+2024-10-31 17:43:18 DEBUG [AWT-EventQueue-0] P.Controller.Controller - Creando usuario
+2024-10-31 17:43:18 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Creando nuevo usuario: User(id=null, username=b, email=b, password=b, createdDate=null, lastLoginDate=null)
+2024-10-31 17:43:18 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Usuario con email repetido
+2024-10-31 17:43:28 DEBUG [AWT-EventQueue-0] P.Controller.Controller - Creando usuario
+2024-10-31 17:43:28 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Creando nuevo usuario: User(id=null, username=b, email=c, password=b, createdDate=null, lastLoginDate=null)
+2024-10-31 17:43:28 WARN  [AWT-EventQueue-0] o.m.jdbc.message.server.ErrorPacket - Error: 1062-23000: Duplicate entry 'b' for key 'username'
+2024-10-31 17:43:28 ERROR [AWT-EventQueue-0] e.e.service.UserServiceImpl - Error creando usuario 
+java.sql.SQLIntegrityConstraintViolationException: (conn=726) Duplicate entry 'b' for key 'username'
+	at org.mariadb.jdbc.export.ExceptionFactory.createException(ExceptionFactory.java:297)
+	at org.mariadb.jdbc.export.ExceptionFactory.create(ExceptionFactory.java:378)
+	at org.mariadb.jdbc.message.ClientMessage.readPacket(ClientMessage.java:189)
+	at org.mariadb.jdbc.client.impl.StandardClient.readPacket(StandardClient.java:1235)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResults(StandardClient.java:1174)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResponse(StandardClient.java:1093)
+	at org.mariadb.jdbc.client.impl.StandardClient.execute(StandardClient.java:1017)
+	at org.mariadb.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:101)
+	at org.mariadb.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:237)
+	at ejercicios.ejercicio05.dao.UserDao.insert(UserDao.java:22)
+	at ejercicios.ejercicio05.service.UserServiceImpl.createUser(UserServiceImpl.java:46)
+	at PanelDeControl.Controller.Controller.register(Controller.java:107)
+	at PanelDeControl.Views.RegisterView$3.actionPerformed(RegisterView.java:129)
+	at java.desktop/javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:1972)
+	at java.desktop/javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2314)
+	at java.desktop/javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:407)
+	at java.desktop/javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:262)
+	at java.desktop/javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:279)
+	at java.desktop/java.awt.Component.processMouseEvent(Component.java:6621)
+	at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3404)
+	at java.desktop/java.awt.Component.processEvent(Component.java:6386)
+	at java.desktop/java.awt.Container.processEvent(Container.java:2266)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:4996)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2324)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4828)
+	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4948)
+	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4575)
+	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4516)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2310)
+	at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2780)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4828)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:775)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:98)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:747)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:745)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:744)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+2024-10-31 17:43:58 DEBUG [AWT-EventQueue-0] P.Controller.Controller - Creando usuario
+2024-10-31 17:43:58 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Creando nuevo usuario: User(id=null, username=b, email=c, password=b, createdDate=null, lastLoginDate=null)
+2024-10-31 17:43:58 WARN  [AWT-EventQueue-0] o.m.jdbc.message.server.ErrorPacket - Error: 1062-23000: Duplicate entry 'b' for key 'username'
+2024-10-31 17:43:58 ERROR [AWT-EventQueue-0] e.e.service.UserServiceImpl - Error creando usuario 
+java.sql.SQLIntegrityConstraintViolationException: (conn=727) Duplicate entry 'b' for key 'username'
+	at org.mariadb.jdbc.export.ExceptionFactory.createException(ExceptionFactory.java:297)
+	at org.mariadb.jdbc.export.ExceptionFactory.create(ExceptionFactory.java:378)
+	at org.mariadb.jdbc.message.ClientMessage.readPacket(ClientMessage.java:189)
+	at org.mariadb.jdbc.client.impl.StandardClient.readPacket(StandardClient.java:1235)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResults(StandardClient.java:1174)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResponse(StandardClient.java:1093)
+	at org.mariadb.jdbc.client.impl.StandardClient.execute(StandardClient.java:1017)
+	at org.mariadb.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:101)
+	at org.mariadb.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:237)
+	at ejercicios.ejercicio05.dao.UserDao.insert(UserDao.java:22)
+	at ejercicios.ejercicio05.service.UserServiceImpl.createUser(UserServiceImpl.java:46)
+	at PanelDeControl.Controller.Controller.register(Controller.java:107)
+	at PanelDeControl.Views.RegisterView$3.actionPerformed(RegisterView.java:129)
+	at java.desktop/javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:1972)
+	at java.desktop/javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2314)
+	at java.desktop/javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:407)
+	at java.desktop/javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:262)
+	at java.desktop/javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:279)
+	at java.desktop/java.awt.Component.processMouseEvent(Component.java:6621)
+	at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3404)
+	at java.desktop/java.awt.Component.processEvent(Component.java:6386)
+	at java.desktop/java.awt.Container.processEvent(Container.java:2266)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:4996)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2324)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4828)
+	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4948)
+	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4575)
+	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4516)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2310)
+	at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2780)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4828)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:775)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:98)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:747)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:745)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:744)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+2024-10-31 17:46:31 DEBUG [AWT-EventQueue-0] P.Controller.Controller - Iniciando sesion
+2024-10-31 17:46:31 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Realizando login con usuario sdda
+2024-10-31 17:46:31 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Intentando login por email...
+2024-10-31 17:46:31 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Intentando login por username...
+2024-10-31 17:46:31 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - No existe usuario (email o username)
+2024-10-31 17:46:42 DEBUG [AWT-EventQueue-0] P.Controller.Controller - Iniciando sesion
+2024-10-31 17:46:42 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Realizando login con usuario b
+2024-10-31 17:46:42 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Intentando login por email...
+2024-10-31 17:46:42 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Password incorrecta
+2024-10-31 19:57:44 DEBUG [AWT-EventQueue-0] P.Controller.Controller - Creando usuario
+2024-10-31 19:57:44 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Creando nuevo usuario: User(id=null, username=a, email=a, password=a, createdDate=null, lastLoginDate=null)
+2024-10-31 19:57:44 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Usuario creado con éxito con id 34
+2024-10-31 19:57:45 DEBUG [AWT-EventQueue-0] P.Controller.Controller - Iniciando sesion
+2024-10-31 19:57:45 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Realizando login con usuario a
+2024-10-31 19:57:45 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Intentando login por email...
+2024-10-31 19:57:45 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Actualizando fecha de último login
+2024-10-31 19:57:45 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Login correcto
+2024-10-31 19:57:49 DEBUG [AWT-EventQueue-0] P.Controller.Controller - Cambiando password
+2024-10-31 19:57:49 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Actualizacion password de usuario con id: 34
+2024-10-31 19:57:49 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Pass antigua igual a la nueva, no se hará el cambio 
+2024-10-31 19:57:54 DEBUG [AWT-EventQueue-0] P.Controller.Controller - Cambiando password
+2024-10-31 19:57:54 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Actualizacion password de usuario con id: 34
+2024-10-31 19:57:54 DEBUG [AWT-EventQueue-0] e.e.service.UserServiceImpl - Password cambiada con exito
