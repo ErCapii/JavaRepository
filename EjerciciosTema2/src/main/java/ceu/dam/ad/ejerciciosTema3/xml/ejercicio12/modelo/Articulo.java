@@ -2,8 +2,10 @@ package ceu.dam.ad.ejerciciosTema3.xml.ejercicio12.modelo;
 
 import java.util.List;
 
-public class Articulo {
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
+public class Articulo {
+	@JsonIgnore
     private String sku;
     private String descripcion;
     private Pvp pvp;

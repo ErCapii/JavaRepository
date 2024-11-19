@@ -6,8 +6,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
+
 public class Catalogo {
-	
+	@JacksonXmlProperty(isAttribute = true)
 	private Integer tamaño;
 	private List<Articulo> articulos;
 
