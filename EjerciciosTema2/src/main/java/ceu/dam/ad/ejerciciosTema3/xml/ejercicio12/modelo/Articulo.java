@@ -2,14 +2,20 @@ package ceu.dam.ad.ejerciciosTema3.xml.ejercicio12.modelo;
 
 import java.util.List;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper;
 
 public class Articulo {
-	@JsonIgnore
+	@JsonProperty(value="identificador")
     private String sku;
     private String descripcion;
+    @JsonProperty(value="precio")
     private Pvp pvp;
+    @JacksonXmlElementWrapper(localName = "modelosDisponibles")
+    @JsonProperty(value="modelo")
     private List<Modelo> modelos;
+    @JacksonXmlElementWrapper(localName = "categorias")
+    @JsonProperty(value="categoria")
     private List<Categoria> categorias;
 
     public String getSku() {

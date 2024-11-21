@@ -11,7 +11,7 @@ import Ejercicio2ServicioClientes.Clientes.Cliente;
 
 public class Dao {
 
-	public List<Cliente> listaClientes(Connection conn) {
+	public List<Cliente> listaPeliculas(Connection conn) {
 		List<Cliente> lista = new ArrayList<Cliente>();
 		String sql = "Select * from customer";
 		try (PreparedStatement stmt = conn.prepareStatement(sql)) {

@@ -17,17 +17,17 @@ public class ServiceClientes extends Service {
 		this.dao = dao;
 	}
 
-	public Map<String, Cliente> buscarCliente() {
-		Map<String, Cliente> mapaCliente = new HashMap<String, Cliente>();
-		try (Connection conn = abrirConexion()) {
-			List<Cliente> listaCliente = dao.listaClientes(conn);
-			mapaCliente = listaCliente.stream().collect(Collectors.toMap(e -> e.getEmail(), c -> c));
-
-		} catch (SQLException e) {
-
-			e.printStackTrace();
-		}
-		return mapaCliente;
-
-	}
+//	public Map<String, Cliente> buscarCliente() {
+//		Map<String, Cliente> mapaCliente = new HashMap<String, Cliente>();
+//		try (Connection conn = abrirConexion()) {
+//			List<Cliente> listaCliente = dao.listaClientes(conn);
+//			mapaCliente = listaCliente.stream().collect(Collectors.toMap(e -> e.getEmail(), c -> c));
+//
+//		} catch (SQLException e) {
+//
+//			e.printStackTrace();
+//		}
+//		return mapaCliente;
+//
+//	}
 }

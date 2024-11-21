@@ -10,7 +10,7 @@ public class Test {
 		Dao dao = new Dao();
 		ServiceClientes service = new ServiceClientes(dao);
 		
-		System.out.println(service.buscarCliente().get("MARILYN.ROSS@sakilacustomer.org"));
+		//System.out.println(service.buscarCliente().get("MARILYN.ROSS@sakilacustomer.org"));
 		
 	}
 }

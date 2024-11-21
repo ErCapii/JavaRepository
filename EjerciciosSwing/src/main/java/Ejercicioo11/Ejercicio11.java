@@ -173,7 +173,7 @@ public class Ejercicio11 {
 		rdbtnVerde.addActionListener(actionListener);
 		rdbtnRojo.addActionListener(actionListener);
 		rdbtnAzul.addActionListener(actionListener);
-		
+				
 		FocusListener focusListener = new FocusListener() {
 			
 			@Override

@@ -1,7 +1,9 @@
 package ceu.dam.ad.ejerciciosTema3.xml.ejercicio12.modelo;
 
-public class Categoria {
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlText;
 
+public class Categoria {
+	@JacksonXmlText
 	private String nombre;
 	
 	public String getNombre() {

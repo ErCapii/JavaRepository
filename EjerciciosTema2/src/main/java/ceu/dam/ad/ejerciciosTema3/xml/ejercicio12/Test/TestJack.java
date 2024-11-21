@@ -10,7 +10,7 @@ public class TestJack {
 		CatalogoJackService service = new CatalogoJackService();
 		
 		Catalogo catalogo = Catalogo.createRandomObject(5);
-		service.exportXML(catalogo, "c:/temporal/catalogoJack.xml");
+		service.exportXML(catalogo, "c:/temp/catalogoJack.xml");
 	}
 
 }
