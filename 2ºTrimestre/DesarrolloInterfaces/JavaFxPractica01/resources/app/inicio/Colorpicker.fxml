@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="panel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ceu.dam.javafx.practica1.inicio.ColorPickerController">
+   <children>
+      <ColorPicker fx:id="colorPkColores" layoutX="231.0" layoutY="131.0" />
+      <Button fx:id="btnAplicar" layoutX="274.0" layoutY="175.0" mnemonicParsing="false" onAction="#aplicarColor" text="Aplicar" />
+      <Label fx:id="lblResultado" layoutX="237.0" layoutY="216.0" text="Resultado">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

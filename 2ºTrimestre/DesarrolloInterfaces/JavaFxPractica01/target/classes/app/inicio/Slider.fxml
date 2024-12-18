@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="panel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ceu.dam.javafx.practica1.inicio.SliderController">
+   <children>
+      <Slider fx:id="slBarraNumerica" blockIncrement="1.0" layoutX="99.0" layoutY="92.0" majorTickUnit="1.0" max="10.0" minorTickCount="10" prefHeight="14.0" prefWidth="402.0" showTickLabels="true" showTickMarks="true" value="5.0" />
+      <Button fx:id="btnLeerNumero" layoutX="281.0" layoutY="153.0" mnemonicParsing="false" onAction="#leeNumeroSlider" text="Leer" />
+      <TextField fx:id="tfImpresionNumero" layoutX="226.0" layoutY="188.0" />
+   </children>
+</AnchorPane>

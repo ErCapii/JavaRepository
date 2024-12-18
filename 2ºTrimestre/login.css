@@ -1,0 +1,72 @@
+/* Fondo con un color frío y suave */
+.fondo {
+    -fx-background-color: linear-gradient(to bottom, #6a8dff, #8c9eff, #a3bfff); /* Degradado frío */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 20, 0.5, 0, 0);
+}
+
+/* Campos de texto con borde sutil y sombra */
+.camposTexto {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #cccccc;
+    -fx-border-width: 2;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-font-size: 16px;
+    -fx-padding: 10px;
+    -fx-text-fill: #555555;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 5, 0.2, 0, 0);
+    -fx-transition: 0.3s;
+}
+
+.camposTexto:focused {
+    -fx-border-color: #4a90e2; /* Azul claro para el foco */
+    -fx-border-width: 3;
+    -fx-effect: dropshadow(gaussian, rgba(74, 144, 226, 0.5), 10, 0.3, 0, 0);
+}
+
+/* Botones con gradiente suave en tonos fríos */
+.botonLoginExit {
+    -fx-background-color: linear-gradient(to right, #4a90e2, #50a3f1); /* Azul gradiente */
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-padding: 10px 20px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 8, 0.5, 0, 0);
+    -fx-transition: all 0.3s ease;
+}
+
+.botonLoginExit:hover {
+    -fx-background-color: linear-gradient(to right, #50a3f1, #4a90e2);
+    -fx-effect: dropshadow(gaussian, rgba(74, 144, 226, 0.5), 12, 0.4, 0, 0);
+}
+
+.botonLoginExit:pressed {
+    -fx-background-color: #4a7ed1;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 4, 0.3, 0, 0);
+}
+
+/* Etiquetas con texto */
+.textoUserPassword {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 0.6), 5, 0.4, 0, 0);
+    -fx-padding: 5px;
+}
+
+/* Mensaje de error con color frío */
+.mensajeError {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #f0a1a1; /* Rosa suave para error */
+    -fx-background-color: rgba(240, 161, 161, 0.2);
+    -fx-padding: 10px;
+    -fx-border-color: #f0a1a1;
+    -fx-border-width: 2;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-effect: dropshadow(gaussian, rgba(240, 161, 161, 0.5), 10, 0.3, 0, 0);
+}
