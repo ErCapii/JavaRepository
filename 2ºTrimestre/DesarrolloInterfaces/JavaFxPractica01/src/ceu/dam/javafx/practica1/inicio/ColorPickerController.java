@@ -7,7 +7,7 @@ import javafx.scene.control.ColorPicker;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 
-public class ColorPickerController {
+public class ColorPickerController extends AppController{
 
     @FXML
     private Button btnAplicar;
@@ -23,7 +23,8 @@ public class ColorPickerController {
 
     @FXML
     void aplicarColor(ActionEvent event) {
-
+    	//setTextFill establece el color de los rgb
+    	lblResultado.setTextFill(colorPkColores.getValue());
     }
 
 }

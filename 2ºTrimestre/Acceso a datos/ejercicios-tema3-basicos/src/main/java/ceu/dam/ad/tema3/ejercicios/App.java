@@ -5,10 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 
 import ceu.dam.ad.tema3.ejercicios.ejercicio01.services.PeliculasException;
-import ceu.dam.ad.tema3.ejercicios.ejercicio01.test.TestEj1;
-import ceu.dam.ad.tema3.ejercicios.ejercicio02.test.TestEj2;
-import ceu.dam.ad.tema3.ejercicios.ejercicio03.test.TestEj3;
-import ceu.dam.ad.tema3.ejercicios.ejercicio04.test.TestEj4;
+import ceu.dam.ad.tema3.ejercicios.ejercicio04bien.test.TestEj4Bien;
 
 @SpringBootApplication
 public class App {
@@ -29,7 +26,7 @@ public class App {
 //		TestEj3 test3 = context.getBean(TestEj3.class);
 //		test3.test();
 		
-		TestEj4 test4 = context.getBean(TestEj4.class);
+		TestEj4Bien test4 = context.getBean(TestEj4Bien.class);
 		test4.test();
 	}
 

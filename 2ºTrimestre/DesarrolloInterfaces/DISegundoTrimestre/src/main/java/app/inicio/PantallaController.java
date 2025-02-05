@@ -8,6 +8,8 @@ public class PantallaController extends AppController{
 
 	@FXML
     private BorderPane panel;
+	
+	
 
     @FXML
     void abrirPantalla1(ActionEvent event) {
@@ -17,6 +19,11 @@ public class PantallaController extends AppController{
     @FXML
     void abrirPantalla2(ActionEvent event) {
     	panel.setCenter(loadScene(FXML_HOLA_MUNDO));
+    }
+    
+    @FXML
+    void abrirTabla(ActionEvent event) {
+    	panel.setCenter(loadScene(FXML_TABLA));
     }
 
 }

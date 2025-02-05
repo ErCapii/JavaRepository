@@ -6,7 +6,6 @@
 <?import javafx.scene.input.KeyCodeCombination?>
 <?import javafx.scene.layout.BorderPane?>
 
-
 <BorderPane fx:id="panel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.inicio.PantallaController">
    <top>
       <MenuBar prefHeight="8.0" prefWidth="600.0" BorderPane.alignment="CENTER">
@@ -23,6 +22,7 @@
                         <KeyCodeCombination alt="ANY" code="H" control="UP" meta="UP" shift="ANY" shortcut="UP" />
                      </accelerator>
                   </MenuItem>
+                  <MenuItem fx:id="tabla" mnemonicParsing="false" onAction="#abrirTabla" text="Pantalla Tabla" />
             </items>
           </Menu>
         </menus>

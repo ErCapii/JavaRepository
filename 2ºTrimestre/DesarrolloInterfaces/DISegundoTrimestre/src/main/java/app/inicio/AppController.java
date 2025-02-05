@@ -15,6 +15,7 @@ public class AppController {
 	public static final String FXML_BIENVENIDA = "/app/inicio/Bienvenida.fxml";
 	public static final String FXML_HOLA_MUNDO = "/app/inicio/HolaMundo.fxml";
 	public static final String FXML_PRINCIPAL = "/app/inicio/principal.fxml";
+	public static final String FXML_TABLA = "/app/inicio/Tabla.fxml";
 	
 	protected static Stage primaryStage;
 	

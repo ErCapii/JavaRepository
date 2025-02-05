@@ -1,0 +1,26 @@
+2024-12-16 20:19:18 INFO  [main] ceu.dam.ad.tema3.ejercicios.App - Starting App using Java 23 with PID 14748 (C:\Users\adominguez5871\Desktop\JavaRepository\2ºTrimestre\Acceso a datos\ejercicios-tema3-basicos\target\classes started by adominguez5871 in C:\Users\adominguez5871\Desktop\JavaRepository\2ºTrimestre\Acceso a datos\ejercicios-tema3-basicos)
+2024-12-16 20:19:18 INFO  [main] ceu.dam.ad.tema3.ejercicios.App - No active profile set, falling back to 1 default profile: "default"
+2024-12-16 20:19:19 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-16 20:19:19 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 59 ms. Found 5 JPA repository interfaces.
+2024-12-16 20:19:19 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-16 20:19:19 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@71a06021
+2024-12-16 20:19:19 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-16 20:19:19 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-16 20:19:19 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-16 20:19:19 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-16 20:19:19 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-16 20:19:19 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 11.5.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-16 20:19:20 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-16 20:19:20 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-16 20:19:21 INFO  [main] ceu.dam.ad.tema3.ejercicios.App - Started App in 2.675 seconds (process running for 3.176)
+2024-12-16 20:19:21 INFO  [main] c.d.a.t.e.e.service.PedidosService - Pedido registrado con id 13
+2024-12-16 20:19:21 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-16 20:19:21 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-16 20:19:21 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

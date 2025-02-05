@@ -1,0 +1,204 @@
+openapi: 3.1.0
+info:
+  title: OpenAPI definition
+  version: v0
+servers:
+- description: Generated server url
+  url: http://localhost:8080
+paths:
+  /usuario/{idUser}:
+    put:
+      description: "Permite cambiar la contraseña del usuario pasandole su id, antigua\
+        \ y nueva contraseña"
+      operationId: cambiarPassword
+      parameters:
+      - explode: false
+        in: path
+        name: idUser
+        required: true
+        schema:
+          format: int64
+          type: integer
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CambiarPasswordRequest'
+        required: true
+      responses:
+        "200":
+          description: OK
+      security:
+      - Authorization: []
+      summary: Cambiar contraseña
+      tags:
+      - user-api
+      x-content-type: application/json
+      x-accepts:
+      - application/json
+  /usuario:
+    get:
+      description: Permite iniciar sesion medienate un usuario y un password
+      operationId: inicarSesion
+      parameters:
+      - explode: true
+        in: query
+        name: login
+        required: true
+        schema:
+          type: string
+        style: form
+      - explode: true
+        in: query
+        name: password
+        required: true
+        schema:
+          type: string
+        style: form
+      responses:
+        "200":
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/User'
+          description: OK
+      security:
+      - Authorization: []
+      summary: 'Iniciar sesion '
+      tags:
+      - user-api
+      x-accepts:
+      - '*/*'
+    post:
+      description: Permite crear un nuevo usuario
+      operationId: crearUsario
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateUserRequest'
+        required: true
+      responses:
+        "200":
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/User'
+          description: OK
+      security:
+      - Authorization: []
+      summary: Crear un nuevo usuario
+      tags:
+      - user-api
+      x-content-type: application/json
+      x-accepts:
+      - '*/*'
+  /usuario/{id}:
+    get:
+      description: Permite consultar un usuario mediante una id
+      operationId: consultarUser
+      parameters:
+      - explode: false
+        in: path
+        name: id
+        required: true
+        schema:
+          format: int64
+          type: integer
+        style: simple
+      responses:
+        "200":
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/User'
+          description: OK
+      security:
+      - Authorization: []
+      summary: Consulta un usario
+      tags:
+      - user-api
+      x-accepts:
+      - '*/*'
+components:
+  schemas:
+    CambiarPasswordRequest:
+      example:
+        newPass: newPass
+        oldPass: oldPass
+      properties:
+        oldPass:
+          maxLength: 100
+          minLength: 0
+          type: string
+        newPass:
+          maxLength: 100
+          minLength: 0
+          type: string
+      required:
+      - newPass
+      - oldPass
+    CreateUserRequest:
+      example:
+        password: password
+        email: email
+        username: username
+      properties:
+        username:
+          maxLength: 50
+          minLength: 3
+          type: string
+        email:
+          maxLength: 50
+          minLength: 3
+          type: string
+        password:
+          maxLength: 100
+          minLength: 8
+          type: string
+      required:
+      - email
+      - password
+      - username
+    User:
+      example:
+        password: password
+        createdDate: 2000-01-23
+        id: 0
+        lastLoginDate: 2000-01-23
+        email: email
+        username: username
+      properties:
+        id:
+          description: "ID del actor, Autogenerado en peticiones POST"
+          format: int64
+          type: integer
+        username:
+          maxLength: 50
+          minLength: 3
+          type: string
+        email:
+          maxLength: 50
+          minLength: 3
+          type: string
+        password:
+          maxLength: 100
+          minLength: 8
+          type: string
+        createdDate:
+          format: date
+          type: string
+        lastLoginDate:
+          format: date
+          type: string
+      required:
+      - email
+      - password
+      - username
+  securitySchemes:
+    Authorization:
+      in: header
+      name: API-KEY
+      type: apiKey
+

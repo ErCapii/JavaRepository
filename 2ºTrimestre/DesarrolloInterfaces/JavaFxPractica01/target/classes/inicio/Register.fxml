@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="panel" prefHeight="400.0" prefWidth="600.0" styleClass="fondo" stylesheets="@login.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ceu.dam.javafx.practica1.inicio.RegisterController">
+   <children>
+      <TextField fx:id="tfUser" layoutX="200.0" layoutY="44.0" styleClass="camposTexto" />
+      <PasswordField fx:id="tpPassword" layoutX="200.0" layoutY="219.0" styleClass="camposTexto" />
+      <Button fx:id="btnRegister" layoutX="198.0" layoutY="295.0" mnemonicParsing="false" onMouseClicked="#botonRegistrar" styleClass="botonLoginExit" text="Register" />
+      <Button fx:id="btnExit" layoutX="324.0" layoutY="293.0" mnemonicParsing="false" onMouseClicked="#btnSalir" prefHeight="49.0" prefWidth="80.0" styleClass="botonLoginExit" text="Exit" />
+      <Label fx:id="lblUsuario" layoutX="200.0" layoutY="7.0" styleClass="textoUserPassword" text="User" />
+      <Label fx:id="lblPassword" layoutX="203.0" layoutY="182.0" styleClass="textoUserPassword" text="Password" />
+      <Label fx:id="lblIncorrecto" alignment="CENTER" layoutX="147.0" layoutY="295.0" prefHeight="17.0" prefWidth="306.0" styleClass="mensajeError" textAlignment="CENTER" visible="false" />
+      <Label fx:id="lblPassword1" layoutX="203.0" layoutY="93.0" styleClass="textoUserPassword" text="Email" />
+      <TextField fx:id="tfEmail" layoutX="200.0" layoutY="130.0" styleClass="camposTexto" />
+      <Button fx:id="btnLogin" layoutX="14.0" layoutY="358.0" mnemonicParsing="false" onAction="#volverLogin" text="Login" />
+   </children>
+</AnchorPane>

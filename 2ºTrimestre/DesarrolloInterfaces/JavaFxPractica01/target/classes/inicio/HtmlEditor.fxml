@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.web.HTMLEditor?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ceu.dam.javafx.practica1.inicio.HtmlEditorController">
+   <children>
+      <HTMLEditor fx:id="htmlComponente" htmlText="&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;/body&gt;&lt;/html&gt;" layoutX="47.0" layoutY="14.0" prefHeight="200.0" prefWidth="506.0" />
+      <Button fx:id="btnLeer" layoutX="47.0" layoutY="225.0" mnemonicParsing="false" onAction="#leerHtml" prefHeight="54.0" prefWidth="120.0" text="Leer" />
+      <TextArea fx:id="tfaHtlmImpreso" layoutX="184.0" layoutY="227.0" prefHeight="152.0" prefWidth="372.0" wrapText="true" />
+   </children>
+</AnchorPane>

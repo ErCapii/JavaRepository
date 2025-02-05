@@ -26,5 +26,16 @@
 		    <artifactId>javafx-fxml</artifactId>
 		    <version>23.0.1</version>
 		</dependency>
+		<dependency>
+   			<groupId>org.openjfx</groupId>
+    		<artifactId>javafx-web</artifactId>
+    		<version>21.0.1</version> <!-- Pon la misma versión de JavaFX que estés usando en las otras dependencias -->
+		</dependency>
+		<dependency>
+    		<groupId>ceu-users-client</groupId>
+    		<artifactId>user-client</artifactId>
+    		<version>v0</version>
+		</dependency>
+
 	</dependencies>
 </project>

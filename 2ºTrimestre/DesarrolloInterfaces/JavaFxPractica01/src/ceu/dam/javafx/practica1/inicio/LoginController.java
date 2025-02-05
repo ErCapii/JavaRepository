@@ -1,10 +1,12 @@
 
 package ceu.dam.javafx.practica1.inicio;
 
-import java.sql.Date;
-import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
+import ceu.dam.ad.api.user.client.ApiClient;
+import ceu.dam.ad.api.user.client.ApiException;
+import ceu.dam.ad.api.user.client.api.UserApiApi;
+import ceu.dam.ad.api.user.client.model.User;
 import ceu.dam.javafx.practica1.modelo.Usuario;
 import ceu.dam.javafx.practica1.services.LoginDenegadoException;
 import ceu.dam.javafx.practica1.services.LoginService;
@@ -18,65 +20,66 @@ import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 
-public class LoginController {
+public class LoginController extends AppController {
 	DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 	LoginService ls = new LoginService();
 
-    @FXML
-    private Button btnExit;
+	@FXML
+	private Button btnExit;
 
-    @FXML
-    private Button btnLogin;
+	@FXML
+	private Button btnRegister;
 
-    @FXML
-    private Label lblPassword;
+	@FXML
+	private Button btnLogin;
 
-    @FXML
-    private Label lblUsuario;
-    
-    @FXML
-    private Label lblIncorrecto;
-    
-    @FXML
-    private TextField tfUser;
+	@FXML
+	private Label lblPassword;
 
-    @FXML
-    private PasswordField tpPassword;
-    
-    @FXML
-    private CheckBox ckbModoOscuro;
-    
-    @FXML
-    private AnchorPane panel;
+	@FXML
+	private Label lblUsuario;
 
-    @FXML
-    void btnEntrar(MouseEvent event) {
-    	try {
-			Usuario user = ls.login(tfUser.getText().toString(), new String(tpPassword.getText()));
-			lblIncorrecto.setVisible(true);
-			lblIncorrecto.setText(user.getNombre());
-		} catch (LoginDenegadoException e) {
-			lblIncorrecto.setVisible(true);
-			lblIncorrecto.setText(e.getMessage());
+	@FXML
+	private Label lblIncorrecto;
+
+	@FXML
+	private TextField tfUser;
+
+	@FXML
+	private PasswordField tpPassword;
+
+	@FXML
+	private AnchorPane panel;
+
+	@FXML
+	void btnEntrar(MouseEvent event) throws LoginDenegadoException {
+		try {
+			User user = service.inicarSesion(tfUser.getText(),tpPassword.getText());
+			if (user != null) {
+				changeScene(FXML_MAIN);
+			}
+		} catch (ApiException e) {
+			System.out.println(e.getCode());
+			System.out.println(e.getLocalizedMessage());
+			if(e.getCode() == 0) {
+				error("down");
+			}else {
+				error(e.getResponseBody());
+				
+			}
+			
 		}
-    }
 
-    @FXML
-    void btnSalir(MouseEvent event) {
-    	System.exit(0);
-    }
-    
-    @FXML
-    void modoOscuro(ActionEvent event) {
-        if (ckbModoOscuro.isSelected()) {
-        	panel.getStylesheets().add("/app/inicio/LoginModoOscuro.css");
-        } else {
-        	panel.getStylesheets().clear();
-        	panel.getStylesheets().add("/app/inicio/login.css");
-        }
+	}
 
-    }
+	@FXML
+	void btnSalir(MouseEvent event) {
+		salir();
+	}
+
+	@FXML
+	void lanzarRegister(ActionEvent event) {
+		changeScene(FXML_REGISTER);
+	}
 
 }
-
-

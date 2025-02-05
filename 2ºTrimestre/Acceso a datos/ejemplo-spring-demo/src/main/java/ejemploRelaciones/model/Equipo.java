@@ -9,6 +9,8 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
+import jakarta.persistence.JoinTable;
+import jakarta.persistence.ManyToMany;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.OneToOne;
 import lombok.Data;
@@ -26,4 +28,9 @@ public class Equipo {
 	@OneToMany(mappedBy = "equipo",fetch = FetchType.EAGER)
 //	@JoinColumn(name = "id_equipo", nullable = false)
 	private List<Jugador> listaJugadores;
+	
+	@ManyToMany(fetch = FetchType.EAGER)
+	@JoinTable(name = "equipos_patrocinadores", joinColumns = {@JoinColumn(name="id_equipo")},
+				inverseJoinColumns = {@JoinColumn(name = "id_patrocinador")})
+	private List<Patrocinador> pratrocinadores;
 }
