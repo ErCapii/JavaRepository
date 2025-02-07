@@ -2,6 +2,7 @@ package ceu.dam.ad.mongo.repository;
 
 import java.time.LocalDate;
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
@@ -11,4 +12,6 @@ import ceu.dam.ad.mongo.model.Pedido;
 public interface PedidoRepository extends MongoRepository<Pedido, String>, CustomPedidoRepository{
 
 	public List<Pedido> findByFechaBetween(LocalDate fecha, LocalDate fecha2);
+	
+	public Optional<Pedido> findOneByNumero(Integer numero);
 }

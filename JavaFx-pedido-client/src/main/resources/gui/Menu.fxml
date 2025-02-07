@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ceu.dam.javafx.pedidoApiClient.gui.PantallasController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Cliente">
+            <items>
+              <MenuItem fx:id="menuAltaCliente" mnemonicParsing="false" onAction="#lanzarAltaCliente" text="Alta" />
+                  <MenuItem fx:id="menuEdicionCliente" mnemonicParsing="false" onAction="#lanzarEdicionCliente" text="Edicion" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Pedidos">
+            <items>
+              <MenuItem fx:id="menuAltaPedido" mnemonicParsing="false" onAction="#lanzarAltaPedidos" text="Alta" />
+                  <MenuItem fx:id="menuBuscarPedido" mnemonicParsing="false" onAction="#lanzarBuscarPedido" text="Buscar" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Salir">
+               <items>
+                  <MenuItem fx:id="menuSalirApp" mnemonicParsing="false" onAction="#lanzarSalirApp" text="Salir de la aplicacion" />
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>

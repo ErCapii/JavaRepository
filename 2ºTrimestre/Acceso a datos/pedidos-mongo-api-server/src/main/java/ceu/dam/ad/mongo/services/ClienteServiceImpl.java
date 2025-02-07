@@ -23,7 +23,7 @@ public class ClienteServiceImpl implements ClienteService {
 
 	@Override
 	public Cliente actualizarCliente(Cliente cliente) throws DatosIncorrectosException {
-		if (consultarClienteById(cliente.getId()) == null || consultarClienteByDni(cliente.getDni()) == null) {
+		if (clienteRp.findById(cliente.getId()) == null || clienteRp.findOneByDni(cliente.getDni()) == null) {
 		    throw new DatosIncorrectosException("El cliente no existe");
 		}
 		return clienteRp.save(cliente);

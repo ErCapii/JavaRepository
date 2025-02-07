@@ -1,0 +1,332 @@
+openapi: 3.1.0
+info:
+  title: OpenAPI definition
+  version: v0
+servers:
+- description: Generated server url
+  url: http://localhost:8080
+paths:
+  /cliente:
+    get:
+      description: Permite obetner un cliente por su dni
+      operationId: consultarClientPorDni
+      parameters:
+      - explode: true
+        in: query
+        name: dni
+        required: true
+        schema:
+          type: string
+        style: form
+      responses:
+        "200":
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/Cliente'
+          description: OK
+      summary: Consulta de cliente por dni
+      tags:
+      - cliente-api-service
+      x-accepts:
+      - '*/*'
+    post:
+      description: Permite crear un cliente
+      operationId: crearCliente
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Cliente'
+        required: true
+      responses:
+        "200":
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/Cliente'
+          description: OK
+      summary: Crear un cliente nuevo
+      tags:
+      - cliente-api-service
+      x-content-type: application/json
+      x-accepts:
+      - '*/*'
+    put:
+      description: Permite actualizar un cliente
+      operationId: actualizarCliente
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Cliente'
+        required: true
+      responses:
+        "200":
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/Cliente'
+          description: OK
+      summary: Actualiza un cliente existente
+      tags:
+      - cliente-api-service
+      x-content-type: application/json
+      x-accepts:
+      - '*/*'
+  /pedido:
+    post:
+      description: Permite registrar un nuevo pedido completo
+      operationId: registrarPedido
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Pedido'
+        required: true
+      responses:
+        "200":
+          content:
+            '*/*':
+              schema:
+                type: string
+          description: OK
+      summary: Registrar pedido nuevo
+      tags:
+      - pedido-api-service
+      x-content-type: application/json
+      x-accepts:
+      - '*/*'
+  /pedidoActualizar:
+    post:
+      description: Permite añadir detalle de pedido a un pedido
+      operationId: añadirDetallePedido
+      parameters:
+      - explode: true
+        in: query
+        name: id
+        required: true
+        schema:
+          type: string
+        style: form
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PedidoDetalle'
+        required: true
+      responses:
+        "200":
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/Pedido'
+          description: OK
+      summary: Añadir detalle pedido
+      tags:
+      - pedido-api-service
+      x-content-type: application/json
+      x-accepts:
+      - '*/*'
+  /pedidoId:
+    get:
+      description: Consulta un pedido mediante una id y lo devuelve
+      operationId: consultarPedido
+      parameters:
+      - explode: true
+        in: query
+        name: id
+        required: true
+        schema:
+          type: string
+        style: form
+      responses:
+        "200":
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/Pedido'
+          description: OK
+      summary: Consulta pedido por id
+      tags:
+      - pedido-api-service
+      x-accepts:
+      - '*/*'
+  /pedidoFechas:
+    get:
+      description: Consulta una lista de pedidos entre dos fechas
+      operationId: buscarPedidosEntreFechas
+      parameters:
+      - explode: true
+        in: query
+        name: fecha1
+        required: false
+        schema:
+          format: date
+          type: string
+        style: form
+      - explode: true
+        in: query
+        name: fecha2
+        required: false
+        schema:
+          format: date
+          type: string
+        style: form
+      responses:
+        "200":
+          content:
+            '*/*':
+              schema:
+                items:
+                  $ref: '#/components/schemas/Pedido'
+                type: array
+          description: OK
+      summary: Consulta lista pedidos por dos fechas
+      tags:
+      - pedido-api-service
+      x-accepts:
+      - '*/*'
+  /pedidoDni/{dni}:
+    get:
+      description: Consulta una lista de pedido mediante un dni del cliente
+      operationId: consultarPedidoCliente
+      parameters:
+      - explode: false
+        in: path
+        name: dni
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            '*/*':
+              schema:
+                items:
+                  $ref: '#/components/schemas/Pedido'
+                type: array
+          description: OK
+      summary: Consulta lista pedidos por dni
+      tags:
+      - pedido-api-service
+      x-accepts:
+      - '*/*'
+  /cliente/{id}:
+    get:
+      description: Permite obetner un cliente por su id
+      operationId: consultarClientePorId
+      parameters:
+      - explode: false
+        in: path
+        name: id
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/Cliente'
+          description: OK
+      summary: Consulta de cliente por id
+      tags:
+      - cliente-api-service
+      x-accepts:
+      - '*/*'
+components:
+  schemas:
+    Cliente:
+      example:
+        direccion: direccion
+        id: id
+        nombre: nombre
+        dni: dni
+      properties:
+        id:
+          type: string
+        dni:
+          maxLength: 9
+          minLength: 9
+          type: string
+        nombre:
+          maxLength: 2147483647
+          minLength: 3
+          type: string
+        direccion:
+          type: string
+      required:
+      - direccion
+      - dni
+      - nombre
+    Articulo:
+      example:
+        descripcion: descripcion
+        codigo: codigo
+        precio: 6.027456183070403
+      properties:
+        codigo:
+          type: string
+        descripcion:
+          type: string
+        precio:
+          type: number
+      required:
+      - descripcion
+      - precio
+    Pedido:
+      example:
+        cliente:
+          direccion: direccion
+          id: id
+          nombre: nombre
+          dni: dni
+        fecha: 2000-01-23
+        numero: 0
+        detalles:
+        - articulo:
+            descripcion: descripcion
+            codigo: codigo
+            precio: 6.027456183070403
+          cantidad: 1
+        - articulo:
+            descripcion: descripcion
+            codigo: codigo
+            precio: 6.027456183070403
+          cantidad: 1
+        id: id
+      properties:
+        id:
+          type: string
+        cliente:
+          $ref: '#/components/schemas/Cliente'
+        fecha:
+          format: date
+          type: string
+        numero:
+          format: int32
+          type: integer
+        detalles:
+          items:
+            $ref: '#/components/schemas/PedidoDetalle'
+          type: array
+    PedidoDetalle:
+      example:
+        articulo:
+          descripcion: descripcion
+          codigo: codigo
+          precio: 6.027456183070403
+        cantidad: 1
+      properties:
+        articulo:
+          $ref: '#/components/schemas/Articulo'
+        cantidad:
+          format: int32
+          minimum: 1
+          type: integer
+      required:
+      - cantidad
+

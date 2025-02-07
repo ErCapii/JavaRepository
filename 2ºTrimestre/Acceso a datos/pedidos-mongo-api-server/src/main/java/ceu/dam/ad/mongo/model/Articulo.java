@@ -2,19 +2,19 @@ package ceu.dam.ad.mongo.model;
 
 import java.math.BigDecimal;
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
-
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Positive;
 import lombok.Data;
-@Document
+
 @Data
 public class Articulo {
-	@Id
+
 	private String codigo;
-	@NotBlank
+	@NotBlank(message = "La descripcion del articulo no puede ser null")
 	private String descripcion;
-	@NotBlank
+	@NotNull(message = "La precio del articulo no puede ser null")
+	@Positive
 	private BigDecimal precio;
 	
 }
